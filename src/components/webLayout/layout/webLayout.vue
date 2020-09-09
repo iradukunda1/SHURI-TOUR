@@ -1,7 +1,7 @@
 <template>
   <div class="web-layout-content">
     <web-nav></web-nav>
-    <web-content></web-content>
+    <transition name="fade"> <web-content></web-content></transition>
     <web-footer></web-footer>
   </div>
 </template>
@@ -53,7 +53,6 @@ html {
 }
 body {
   overflow-x: hidden;
-  overflow-y: scroll !important;
 }
 .web-layout-content {
   display: grid;
@@ -61,12 +60,13 @@ body {
   width: 100%;
   height: 100vh;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: 142.97px 1fr auto;
   grid-template-areas:
     "navbar"
     "content"
-    "footer ";
+    "footer";
   overflow-x: hidden;
+  overflow-y: auto;
   font-family: "Roboto", sans-serif;
   position: fixed;
 
@@ -77,10 +77,8 @@ body {
     min-height: 15vh;
   }
   .web-content {
-    position: relative;
     grid-area: content;
     background: white;
-    min-height: 36vh;
   }
   .footer-classic {
     grid-area: footer;

@@ -1,0 +1,195 @@
+<template>
+  <div class="tours-lists w-100 pt-4 mb-5">
+    <div class="tours-context-container container px-0">
+      <div class="content-context row w-100 mx-0">
+        <div class="tour-type-side-bar-container col-sm-4 col-md-3">
+          <h4
+            class="search-results-title px-3 py-3 bg-white border-bottom-4px fa-18"
+          >
+            <i class="fas fa-search text-warning fa-16 mr-2"></i
+            ><b>{{ tours.length }}</b> results found.
+          </h4>
+          <div class="tours-filters">
+            <div class="tours-search-container mb-1">
+              <h4
+                class="change-search p-3 bg-white mb-0 fa-18 cursor-pointer d-flex w-100"
+                :aria-expanded="showForm ? 'true' : 'false'"
+                aria-controls="collapse-1"
+                @click="showForm = !showForm"
+              >
+                Modify Search
+                <i
+                  class="fas fa-plus bg-primary text-white p-1 ml-auto rounded-circle fa-12"
+                  v-if="!showForm"
+                ></i>
+                <i
+                  class="fas fa-minus bg-grey text-black p-1 ml-auto rounded-circle fa-12"
+                  v-if="showForm"
+                ></i>
+              </h4>
+              <b-collapse id="collapse-1" v-model="showForm">
+                <b-card class="rounded-0 border-0 search-form">
+                  <form>
+                    <label>Your Destination</label>
+                    <input
+                      type="text"
+                      class="input-text px-2 fa-14 w-100"
+                      placeholder="Enter a destination or tour name"
+                    />
+                    <button
+                      class="submit-search-button text-white w-100 border-0 text-uppercase d-flex mt-4 btn rounded-0 fa-14"
+                    >
+                      search again <i class="fas fa-check ml-auto pt-1"></i>
+                    </button>
+                  </form>
+                </b-card>
+              </b-collapse>
+            </div>
+            <div class="tours-type-options">
+              <h4
+                class="change-search p-3 bg-white mb-0 fa-18 cursor-pointer d-flex w-100"
+                :aria-expanded="showTourTypeLists ? 'true' : 'false'"
+                aria-controls="collapse-2"
+                @click="showTourTypeLists = !showTourTypeLists"
+              >
+                Tour Type
+                <i
+                  class="fas fa-plus bg-primary cursor-pointer text-white p-1 ml-auto rounded-circle fa-12"
+                  v-if="!showTourTypeLists"
+                ></i>
+                <i
+                  class="fas fa-minus bg-grey cursor-pointer text-black p-1 ml-auto rounded-circle fa-12"
+                  v-if="showTourTypeLists"
+                ></i>
+              </h4>
+              <b-collapse
+                id="collapse-2"
+                v-model="showTourTypeLists"
+                class="tour-type-lists"
+              >
+                <b-card class="rounded-0 border-0">
+                  <ul class="tour-type-option list-unstyled m-0 p-0">
+                    <li
+                      class="fa-13 cursor-pointer mb-1 p-2 bg-grey text-black w-100"
+                    >
+                      All
+                    </li>
+                    <li
+                      v-for="(type, index) in tourTypes"
+                      :key="index"
+                      class="fa-13 cursor-pointer mb-1 p-2 bg-grey text-black w-100 d-flex"
+                    >
+                      {{ type }}
+                      <i class="fas fa-angle-right fa-13 ml-auto"></i>
+                    </li></ul
+                ></b-card>
+              </b-collapse>
+            </div>
+          </div>
+        </div>
+        <div class="tours-list-container col-sm-8 col-md-9">
+          <list-view :tours="tours" @clicked="handleTourClicked" />
+          <ul class="page-numbers list-unstyled row mx-0">
+            <li class="current">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>Next</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+/* eslint-disable */
+import ListView from "@/components/webLayout/pages/tours/list-view";
+import tours from "@/components/webLayout/pages/tours/tours";
+export default {
+  name: "tours",
+  components: { ListView },
+  data() {
+    return {
+      showForm: false,
+      showTourTypeLists: false,
+      tours: tours.tours,
+      tourTypes: [
+        "Biology",
+        "Chemistry",
+        "Geography",
+        "Mathematics",
+        "Languages",
+        "Computer",
+        "Economics",
+        "Arts & Music",
+        "Physics",
+        " Cross Curricular",
+        "Humanities & Social Sciences"
+      ]
+    };
+  },
+  methods: {
+    handleTourClicked(tour) {
+      // this.$router.push({ name: "Tour Profile", params: { id: tour.id } });
+      // this.$store.dispatch("setResources", ["tour", tour]);
+    }
+  }
+};
+</script>
+
+<style scoped lang="scss">
+.tours-lists {
+  min-height: 400px;
+  text-align: left;
+  background: #f5f5f5;
+  .change-search {
+    outline: none;
+    &:hover {
+      color: rgba(100, 100, 234, 0.5);
+    }
+  }
+  .submit-search-button {
+    background: rgb(152, 206, 68);
+    &:hover {
+      background: rgb(127, 178, 49);
+    }
+  }
+  .tour-type-option {
+    li {
+      list-style: none;
+      width: fit-content;
+      &:hover {
+        color: #194eb0 !important;
+      }
+    }
+  }
+  .page-numbers {
+    li {
+      float: left;
+      height: 32px;
+      margin-right: 6px;
+      text-align: center;
+      font-size: 0.9167em;
+      line-height: 32px;
+      padding: 0 10px;
+      color: #fff;
+      border-radius: 0 !important;
+      background: #d9d9d9;
+      border: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      position: relative;
+      cursor: pointer;
+      margin-left: -1px;
+      &:hover {
+        color: #fff;
+        background: #01b7f2;
+      }
+    }
+    .current {
+      color: #fff;
+      background: #01b7f2 !important;
+    }
+  }
+}
+</style>

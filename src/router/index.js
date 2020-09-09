@@ -6,6 +6,7 @@ import store from "../store/index";
 import NProgress from "nprogress";
 import "../../node_modules/nprogress/nprogress.css";
 import webLayout from "@/components/webLayout/layout/webLayout";
+import home from "@/components/webLayout/pages/views/home";
 
 const routerPush = VueRouter.prototype.push;
 VueRouter.prototype.push = function push(location) {
@@ -21,15 +22,26 @@ const router = new VueRouter({
     {
       path: "/",
       name: "web layout",
-      // redirect: "/",
-      component: webLayout
-      // children:[
-            // {
-            //   path: "/",
-            //   name: "Home",
-            //   component: webLayout
-            // }
-      // ]
+      redirect: "/",
+      component: webLayout,
+      children: [
+        {
+          path: "/",
+          name: "Home",
+          component: home
+        },
+        {
+          path: "/tours",
+          name: "Tours",
+          component: () =>
+            import("@/components/webLayout/pages/tours/tours.vue")
+        },
+        {
+          path: "tours/:id",
+          name: "Tour Profile",
+          component: () => import("@/components/webLayout/pages/tours/tour")
+        }
+      ]
     },
     {
       path: "*",

@@ -46,14 +46,43 @@
       :class="{ 'links-container-slider': toggleMobileSideBar }"
     >
       <ul class="nav-links d-flex mx-auto">
-        <li>HOME</li>
-        <li>TOURS</li>
+        <li
+          :class="{ 'active-link': $route.name == 'Home' }"
+          @click="$router.push({ name: 'Home' })"
+        >
+          HOME
+        </li>
+        <li
+          :class="{ 'active-link': $route.name == 'Tours' }"
+          @click="$router.push({ name: 'Tours' })"
+        >
+          TOURS
+        </li>
         <li>PARTNERS</li>
         <li>TEACHERS</li>
         <li>HEALTH & SAFETY</li>
-        <li>ABOUT US</li>
+        <li
+          :class="{ 'active-link': showAboutDropDown }"
+          @mouseover="showAboutDropDown = !showAboutDropDown"
+          @mouseleave="showAboutDropDown = !showAboutDropDown"
+        >
+          ABOUT US
+        </li>
         <li>CONTACT US</li>
       </ul>
+      <div
+        class="about-us-dropDown"
+        v-show="showAboutDropDown"
+        @mouseleave="showAboutDropDown = !showAboutDropDown"
+      >
+        <ul class="p-0 m-0">
+          <li>OurTeam</li>
+          <li>Who we are</li>
+          <li>Why us?</li>
+          <li>The price we quote</li>
+          <li>Financial Security</li>
+        </ul>
+      </div>
     </div>
   </main>
 </template>
@@ -65,7 +94,8 @@ export default {
   name: "web-navBar",
   data() {
     return {
-      toggleMobileSideBar: false
+      toggleMobileSideBar: false,
+      showAboutDropDown: false
     };
   },
   methods: {
@@ -76,9 +106,10 @@ export default {
       this.toggleMobileSideBar = !this.toggleMobileSideBar;
       navLinks.forEach((link, index) => {
         if (link.style.animation) {
-          link.style.animation = '';
+          link.style.animation = "";
         } else {
-          link.style.animation = `fadeLinks 0.5s ease forwards ${index / 7 + 0.3}s`;
+          link.style.animation = `fadeLinks 0.5s ease forwards ${index / 7 +
+            0.5}s`;
         }
       });
     }
@@ -87,11 +118,11 @@ export default {
 </script>
 <style>
 @keyframes fadeLinks {
-  from{
+  0% {
     opacity: 0 !important;
     transform: translateX(50px) !important;
   }
-  to{
+  100% {
     opacity: 1 !important;
     transform: translateX(0px) !important;
   }
@@ -166,12 +197,51 @@ export default {
       padding: 0;
       justify-content: space-around;
       li {
-        padding-top: 1rem;
+        padding: 1rem 0.8rem 0rem 0.8rem;
+        transition: all 0.5s;
         list-style: none;
         font-weight: bold;
         font-size: 14px;
         color: aliceblue;
         cursor: pointer;
+        &:hover {
+          color: #fff;
+          background: #40cbf8;
+        }
+        &:nth-child(6) {
+          position: relative;
+        }
+      }
+      .active-link {
+        color: #fff;
+        background: #40cbf8;
+      }
+    }
+    .about-us-dropDown {
+      position: absolute;
+      z-index: 1;
+      right: 20.2%;
+      top: 21%;
+      width: 180px;
+      padding: 0;
+      background: #01b7f2;
+      transition: all 0.5s ease;
+      ul {
+        li {
+          list-style: none;
+          font-weight: bold;
+          color: aliceblue;
+          cursor: pointer;
+          padding: 12px 20px 12px 18px;
+          display: block;
+          font-size: 0.9167em;
+          opacity: 0.7;
+          border-top: 1px solid #04afe7;
+          &:hover {
+            background: #04afe7;
+            opacity: 1;
+          }
+        }
       }
     }
   }

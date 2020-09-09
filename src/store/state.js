@@ -1,5 +1,6 @@
 export default {
   resources: {
+    tour:{},
     trigger: {}
   },
   accessories: {

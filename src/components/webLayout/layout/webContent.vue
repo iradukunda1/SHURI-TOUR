@@ -1,5 +1,26 @@
 <template>
   <div class="web-content">
+    <div class="page-title-container w-100" v-if="$route.name !== 'Home'">
+      <div class="container pt-3 px-0">
+        <p v-if="$route.name == 'Tour Profile'" class="tour-name fa-18 text-white mb-0">
+          {{ resources.tour.title.toUpperCase() }}
+        </p>
+        <ul class="row justify-content-end mx-0 w-100 px-0">
+          <li
+            class="cursor-pointer text-center text-white pr-1"
+            @click="$router.push({ name: 'Home' })"
+          >
+            Home
+          </li>
+          <p class="fa-12 text-small text-white mb-0" v-if="$route.name == 'Tour Profile'">
+            /
+            <span class="text-warning pl-2">
+                {{ resources.tour.title.toUpperCase() }}</span
+            >
+          </p>
+        </ul>
+      </div>
+    </div>
     <router-view></router-view>
   </div>
 </template>
@@ -13,6 +34,11 @@ export default {
 };
 </script>
 <style>
+@keyframes zoomOut {
+  100% {
+    transform: scale(1.2);
+  }
+}
 .slide-right-enter-active {
   transition: all 1s ease;
 }
@@ -91,5 +117,26 @@ export default {
     transform: rotate(360deg);
   }
 }
-
+</style>
+<style scoped lang="scss">
+.web-content {
+  .page-title-container {
+    min-height: 56px;
+    background: #2d3e52;
+  }
+  .tour-name{
+    font-weight: 600;
+  }
+  ul li {
+    padding-right: 5px;
+    list-style: none;
+    font-size:.833em;
+    font-weight: 700;;
+    width: fit-content;
+    line-height: 56px;
+  }
+  li:hover {
+    color: #194eb0 !important;
+  }
+}
 </style>
