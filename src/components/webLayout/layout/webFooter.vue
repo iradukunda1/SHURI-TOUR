@@ -22,13 +22,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .footer-classic {
-  position: absolute;
-  bottom: 0;
 }
 @media screen and (max-width: 768px) {
-}
-@media (min-width: 375px) and (max-width: 425px) {
-}
-@media screen and( max-width: 320px) {
 }
 </style>

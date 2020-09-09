@@ -12,5 +12,7 @@ export default {
   setView({ commit }, data) {
     commit("view", data);
   },
-
+  fetchTour({ commit }, tour) {
+    commit("setResources", ["tour", tour]);
+  }
 };
