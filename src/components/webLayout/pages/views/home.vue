@@ -213,7 +213,7 @@
               25€ credit (for up to 10 devices!)
             </p>
           </div>
-          <div class="budget-exp-logo-container col-sm-3 mb-3">
+          <div class="budget-exp-logo-container col-sm-3 h-fit mb-3">
             <img
               src="/img/logos/BEE-LOGO-M_-BLUE_BACKGROUND_RGB.jpg"
               class="w-100"
@@ -296,6 +296,7 @@
                 <div
                   class="view-button mx-2 btn rounded-0 mt-4"
                   title="View Detail"
+                  @click="tourProfile(tour)"
                 >
                   VIEW DETAILS
                 </div>
@@ -326,6 +327,11 @@ export default {
     };
   },
   methods: {
+    tourProfile(tour) {
+      this.$router.push({ name: "Tour Profile", params: { id: tour.id } });
+      this.$store.dispatch("setResources", ["tour", tour]);
+      this.$store.dispatch("setResources", ["page_title", tour.title]);
+    },
     progressBar() {
       const prg = document.querySelector(".progressBar");
       var counter = 5;

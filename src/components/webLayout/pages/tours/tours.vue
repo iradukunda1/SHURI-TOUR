@@ -90,7 +90,7 @@
         <div class="tours-list-container col-sm-8 col-md-9">
           <list-view :tours="tours" @clicked="handleTourClicked" />
           <ul class="page-numbers list-unstyled row mx-0">
-            <li class="current">1</li>
+            <li class="active">1</li>
             <li>2</li>
             <li>3</li>
             <li>Next</li>
@@ -130,8 +130,9 @@ export default {
   },
   methods: {
     handleTourClicked(tour) {
-      // this.$router.push({ name: "Tour Profile", params: { id: tour.id } });
-      // this.$store.dispatch("setResources", ["tour", tour]);
+      this.$router.push({ name: "Tour Profile", params: { id: tour.id } });
+      this.$store.dispatch("setResources", ["tour", tour]);
+      this.$store.dispatch("setResources", ["page_title", tour.title]);
     }
   }
 };
@@ -186,7 +187,7 @@ export default {
         background: #01b7f2;
       }
     }
-    .current {
+    .active {
       color: #fff;
       background: #01b7f2 !important;
     }

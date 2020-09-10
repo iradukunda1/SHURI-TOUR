@@ -72,8 +72,8 @@
       </ul>
       <div
         class="about-us-dropDown"
-        v-show="showAboutDropDown"
         @mouseleave="showAboutDropDown = !showAboutDropDown"
+        v-if="showAboutDropDown"
       >
         <ul class="p-0 m-0">
           <li>OurTeam</li>
@@ -220,7 +220,7 @@ export default {
     .about-us-dropDown {
       position: absolute;
       z-index: 1;
-      right: 20.2%;
+      right: 21.4%;
       top: 21%;
       width: 180px;
       padding: 0;
