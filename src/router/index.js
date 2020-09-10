@@ -40,6 +40,12 @@ const router = new VueRouter({
           path: "tours/:id",
           name: "Tour Profile",
           component: () => import("@/components/webLayout/pages/tours/tour")
+        },
+        {
+          path: "request-a-tour-proposal",
+          name: "Request-Tour",
+          component: () =>
+            import("@/components/webLayout/pages/tours/request-tour")
         }
       ]
     },
@@ -50,11 +56,7 @@ const router = new VueRouter({
     }
   ],
   scrollBehavior(to, from, savedPosition) {
-    if (savedPosition) {
-      return savedPosition;
-    } else {
-      return { x: 0, y: 0 };
-    }
+    return { x: 0, y: 0 };
   }
 });
 router.beforeResolve((to, from, next) => {

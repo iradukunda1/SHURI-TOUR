@@ -49,8 +49,14 @@
 .h-90px {
   height: 90px !important;
 }
+.h-fit{
+  height: fit-content !important;
+}
 .g-text {
   color: #ced847 !important;
+}
+.bg-light-green{
+  background: #98ce44 !important;
 }
 .fa-12 {
   font-size: 12px !important;
@@ -73,8 +79,14 @@
 .fa-18 {
   font-size: 18px !important;
 }
+.font-700{
+  font-weight: 700 !important;
+}
 .border-2px {
   border: 2px solid rgb(254, 255, 255) !important;
+}
+.border-w1 {
+  border: 1px solid rgb(254, 255, 255) !important;
 }
 .border-bottom-4px{
   border-bottom: 4px solid #f5f5f5 !important;
