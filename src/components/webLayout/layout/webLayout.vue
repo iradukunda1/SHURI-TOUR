@@ -1,7 +1,7 @@
 <template>
   <div class="web-layout-content">
     <web-nav></web-nav>
-    <transition name="fade"> <web-content></web-content></transition>
+    <web-content></web-content>
     <web-footer></web-footer>
   </div>
 </template>

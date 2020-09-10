@@ -330,6 +330,7 @@ export default {
     tourProfile(tour) {
       this.$router.push({ name: "Tour Profile", params: { id: tour.id } });
       this.$store.dispatch("setResources", ["tour", tour]);
+      this.$store.dispatch("setResources", ["page_title", tour.title]);
     },
     progressBar() {
       const prg = document.querySelector(".progressBar");

@@ -177,12 +177,12 @@
                     </label>
                   </div>
                   <ul class="list-unstyled ml-2">
-                    <li>
-                      <input type="checkbox" class="rounded-0" />
+                    <li class="d-flex">
+                      <input type="checkbox" class="rounded-0 mt-1" />
                       <label class="fa-12">E-mail</label>
                     </li>
                     <li>
-                      <input type="checkbox" class="rounded-0" />
+                      <input type="checkbox" class="rounded-0 mt-1" />
                       <label class="fa-12">Phone</label>
                     </li>
                   </ul>
