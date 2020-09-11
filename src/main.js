@@ -6,6 +6,7 @@ import VueAwesomeSwiper from "vue-awesome-swiper";
 import axios from "@/config/axios.config";
 // import mixin from "./config/mixins";
 import bootstrapVue from "bootstrap-vue";
+import * as VueGoogleMaps from "vue2-google-maps";
 import "./registerServiceWorker";
 import "../node_modules/toastr/build/toastr.css";
 import "../node_modules/nprogress/nprogress.css";
@@ -14,6 +15,11 @@ import "bootstrap-vue/dist/bootstrap-vue.css";
 
 Vue.use(VueAwesomeSwiper);
 Vue.use(bootstrapVue);
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: "AIzaSyDnwQnmroGovPRLdAhMlwWLYoM75958kSM"
+  }
+});
 // Vue.use(mixin);
 Vue.config.productionTip = false;
 

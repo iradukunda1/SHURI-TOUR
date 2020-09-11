@@ -56,7 +56,19 @@ const router = new VueRouter({
     }
   ],
   scrollBehavior(to, from, savedPosition) {
-    return { x: 0, y: 0 };
+    if ("scrollRestoration" in history) {
+      history.scrollRestoration = "manual";
+    }
+    let position = { x: 0, y: 0 };
+    if (savedPosition) {
+      position = savedPosition;
+    }
+
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(position);
+      }, 1000);
+    });
   }
 });
 router.beforeResolve((to, from, next) => {

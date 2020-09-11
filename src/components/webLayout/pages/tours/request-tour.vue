@@ -181,7 +181,7 @@
                       <input type="checkbox" class="rounded-0 mt-1" />
                       <label class="fa-12">E-mail</label>
                     </li>
-                    <li>
+                    <li class="d-flex">
                       <input type="checkbox" class="rounded-0 mt-1" />
                       <label class="fa-12">Phone</label>
                     </li>

@@ -68,21 +68,110 @@
                 class="tour-type-lists"
               >
                 <b-card class="rounded-0 border-0">
+                  <p v-if="showClickedType.title" class="fa-12">
+                    <span
+                      @click="
+                        (showClickedType.title = null),
+                          ((showClickedType.department = null),
+                          (showClickedType.classCode = null),
+                          (showClickedType.term = null))
+                      "
+                      class="cursor-pointer"
+                      >Home /</span
+                    >
+                    <span
+                      v-if="showClickedType.title"
+                      class="px-1"
+                      @click="
+                        (showClickedType.department = null),
+                          (showClickedType.classCode = null)
+                      "
+                      :class="
+                        showClickedType.title && !showClickedType.department
+                          ? 'text-warning pointer-event'
+                          : 'cursor-pointer'
+                      "
+                      >{{ showClickedType.title }}</span
+                    >
+                    <span
+                      @click="showClickedType.classCode = null"
+                      v-if="showClickedType.department"
+                      class="pr-1"
+                      :class="
+                        showClickedType.department && !showClickedType.classCode
+                          ? 'text-warning pointer-event'
+                          : 'cursor-pointer'
+                      "
+                      >/ {{ showClickedType.department }}</span
+                    >
+                    <span
+                      v-if="showClickedType.classCode"
+                      @click="showClickedType.term = null"
+                      :class="
+                        showClickedType.classCode && !showClickedType.term
+                          ? 'text-warning pointer-event'
+                          : 'cursor-pointer'
+                      "
+                      >/ {{ showClickedType.classCode }}</span
+                    >
+                  </p>
                   <ul class="tour-type-option list-unstyled m-0 p-0">
                     <li
                       class="fa-13 cursor-pointer mb-1 p-2 bg-grey text-black w-100"
+                      v-if="!showClickedType.title"
                     >
                       All
                     </li>
-                    <li
-                      v-for="(type, index) in tourTypes"
-                      :key="index"
-                      class="fa-13 cursor-pointer mb-1 p-2 bg-grey text-black w-100 d-flex"
+                    <div v-if="!showClickedType.title">
+                      <li
+                        v-for="(type, index) in tourTypes"
+                        :key="index"
+                        class="fa-13 cursor-pointer mb-1 p-2 bg-grey text-black w-100 d-flex"
+                        @click="typeClicked(type)"
+                      >
+                        <span>{{ type.title }} </span>
+                      </li>
+                    </div>
+                    <div
+                      v-if="
+                        showClickedType.title && !showClickedType.department
+                      "
                     >
-                      {{ type }}
-                      <i class="fas fa-angle-right fa-13 ml-auto"></i>
-                    </li></ul
-                ></b-card>
+                      <li
+                        v-for="(department,
+                        index) in savedDepartments.department"
+                        :key="index"
+                        class="fa-13 cursor-pointer mb-1 p-2 bg-grey text-black w-100 d-flex"
+                        @click="departmentClicked(department.name)"
+                      >
+                        <span>{{ department.name }} </span>
+                      </li>
+                    </div>
+                    <div
+                      v-if="
+                        showClickedType.department && !showClickedType.classCode
+                      "
+                    >
+                      <li
+                        v-for="(classroom, index) in savedClassrooms"
+                        :key="index"
+                        class="fa-13 cursor-pointer mb-1 p-2 bg-grey text-black w-100 d-flex"
+                        @click="classroomClicked(classroom.classCode)"
+                      >
+                        <span>{{ classroom.classCode }} </span>
+                      </li>
+                    </div>
+                    <div v-if="showClickedType.classCode">
+                      <li
+                        v-for="(term, index) in savedTerms"
+                        :key="index"
+                        class="fa-13 cursor-pointer mb-1 p-2 bg-grey text-black w-100 d-flex"
+                      >
+                        <span>{{ term }} </span>
+                      </li>
+                    </div>
+                  </ul></b-card
+                >
               </b-collapse>
             </div>
           </div>
@@ -113,28 +202,233 @@ export default {
       showForm: false,
       showTourTypeLists: false,
       tours: tours.tours,
+      showClickedType: {
+        title: null,
+        department: null,
+        classCode: null,
+        term: null
+      },
+      savedDepartments: {},
+      savedClassrooms: [],
+      savedTerms: [],
       tourTypes: [
-        "Biology",
-        "Chemistry",
-        "Geography",
-        "Mathematics",
-        "Languages",
-        "Computer",
-        "Economics",
-        "Arts & Music",
-        "Physics",
-        " Cross Curricular",
-        "Humanities & Social Sciences"
+        {
+          title: "Sciences",
+          department: [
+            {
+              name: "PCB",
+              classrooms: [
+                { classCode: "s04", terms: ["1ST TERM", "Term 2", "Term 3"] },
+                { classCode: "s05", terms: ["1ST TERM", "Term 2", "Term 3"] },
+                { classCode: "s06", terms: ["1ST TERM", "Term 2", "Term 3"] },
+                { classCode: "s03", terms: ["1ST TERM", "Term 2", "Term 3"] }
+              ]
+            },
+            {
+              name: "MCB",
+              classrooms: [
+                { classCode: "s04", terms: ["1ST TERM", "Term 2", "Term 3"] },
+                { classCode: "s05", terms: ["1ST TERM", "Term 2", "Term 3"] },
+                { classCode: "s06", terms: ["1ST TERM", "Term 2", "Term 3"] },
+                { classCode: "s03", terms: ["1ST TERM", "Term 2", "Term 3"] }
+              ]
+            },
+            {
+              name: "PCM",
+              classrooms: [
+                { classCode: "s04", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s05", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s06", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s03", terms: ["Term 1", "Term 2", "Term 3"] }
+              ]
+            },
+            {
+              name: "BCG",
+              classrooms: [
+                { classCode: "s04", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s05", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s06", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s03", terms: ["Term 1", "Term 2", "Term 3"] }
+              ]
+            },
+            {
+              name: "MEG",
+              classrooms: [
+                { classCode: "s04", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s05", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s06", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s03", terms: ["Term 1", "Term 2", "Term 3"] }
+              ]
+            },
+            {
+              name: "MPG",
+              classrooms: [
+                { classCode: "s04", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s05", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s06", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s03", terms: ["Term 1", "Term 2", "Term 3"] }
+              ]
+            },
+            {
+              name: "MCE",
+              classrooms: [
+                { classCode: "s04", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s05", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s06", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s03", terms: ["Term 1", "Term 2", "Term 3"] }
+              ]
+            },
+            {
+              name: "MPC",
+              classrooms: [
+                { classCode: "s03", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s04", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s05", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s06", terms: ["Term 1", "Term 2", "Term 3"] }
+              ]
+            }
+          ]
+        },
+        {
+          title: "Languages",
+          department: [
+            {
+              name: "LFK",
+              classrooms: [
+                { classCode: "s04", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s05", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s06", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s03", terms: ["Term 1", "Term 2", "Term 3"] }
+              ]
+            },
+            {
+              name: "LKK",
+              classrooms: [
+                { classCode: "s04", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s05", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s06", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s03", terms: ["Term 1", "Term 2", "Term 3"] }
+              ]
+            },
+            {
+              name: "LKF",
+              classrooms: [
+                { classCode: "s04", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s05", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s06", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s03", terms: ["Term 1", "Term 2", "Term 3"] }
+              ]
+            }
+          ]
+        },
+        {
+          title: "Humanities",
+          department: [
+            {
+              name: "HEG",
+              classrooms: [
+                { classCode: "s04", terms: ["1ST TERM", "Term 2", "Term 3"] },
+                { classCode: "s05", terms: ["1ST TERM", "Term 2", "Term 3"] },
+                { classCode: "s06", terms: ["1ST TERM", "Term 2", "Term 3"] },
+                { classCode: "s03", terms: ["1ST TERM", "Term 2", "Term 3"] }
+              ]
+            },
+            {
+              name: "HEL",
+              classrooms: [
+                { classCode: "s04", terms: ["1ST TERM", "Term 2", "Term 3"] },
+                { classCode: "s05", terms: ["1ST TERM", "Term 2", "Term 3"] },
+                { classCode: "s06", terms: ["1ST TERM", "Term 2", "Term 3"] },
+                { classCode: "s03", terms: ["1ST TERM", "Term 2", "Term 3"] }
+              ]
+            },
+            {
+              name: "LEG",
+              classrooms: [
+                { classCode: "s04", terms: ["1ST TERM", "Term 2", "Term 3"] },
+                { classCode: "s05", terms: ["1ST TERM", "Term 2", "Term 3"] },
+                { classCode: "s06", terms: ["1ST TERM", "Term 2", "Term 3"] },
+                { classCode: "s03", terms: ["1ST TERM", "Term 2", "Term 3"] }
+              ]
+            },
+            {
+              name: "HGL",
+              classrooms: [
+                { classCode: "s04", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s05", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s06", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s03", terms: ["Term 1", "Term 2", "Term 3"] }
+              ]
+            },
+            {
+              name: "REHL",
+              classrooms: [
+                { classCode: "s04", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s05", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s06", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s03", terms: ["Term 1", "Term 2", "Term 3"] }
+              ]
+            },
+            {
+              name: "REHG",
+              classrooms: [
+                { classCode: "s04", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s05", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s06", terms: ["Term 1", "Term 2", "Term 3"] },
+                { classCode: "s03", terms: ["Term 1", "Term 2", "Term 3"] }
+              ]
+            }
+          ]
+        }
       ]
     };
   },
   methods: {
+    typeClicked(type) {
+      this.showClickedType.title = type.title;
+      this.filteredDepartment(type);
+    },
+    filteredDepartment(type) {
+      for (let i = 0; i < this.tourTypes.length; i++) {
+        if (this.tourTypes[i].title === type.title) {
+          this.savedDepartments = { ...this.tourTypes[i] };
+        }
+      }
+    },
+    departmentClicked(data) {
+      this.showClickedType.department = data;
+      this.filterClassroom(data);
+    },
+    filterClassroom(data) {
+      for (let i = 0; i < this.savedDepartments.department.length; i++) {
+        if (this.savedDepartments.department[i].name === data) {
+          this.savedClassrooms = {
+            ...this.savedDepartments.department[i].classrooms
+          };
+        }
+      }
+    },
+    classroomClicked(data) {
+      this.showClickedType.classCode = data;
+      this.filterTerms(data);
+    },
+    filterTerms(data) {
+      var size = Object.keys(this.savedClassrooms).length;
+      for (let i = 0; i < size; i++) {
+        if (this.savedClassrooms[i].classCode === data) {
+          this.savedTerms = {
+            ...this.savedClassrooms[i].terms
+          };
+        }
+      }
+    },
     handleTourClicked(tour) {
       this.$router.push({ name: "Tour Profile", params: { id: tour.id } });
       this.$store.dispatch("setResources", ["tour", tour]);
       this.$store.dispatch("setResources", ["page_title", tour.title]);
     }
-  }
+  },
+  computed: {}
 };
 </script>
 
@@ -159,6 +453,7 @@ export default {
     li {
       list-style: none;
       width: fit-content;
+      animation: fade 0.3s ease;
       &:hover {
         color: #194eb0 !important;
       }
