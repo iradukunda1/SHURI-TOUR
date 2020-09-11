@@ -209,7 +209,17 @@
                   />
                   <p class="fa-13">
                     By completing and submitting this form you consent to our
-                    <a href="javascript:;;">privacy statement.</a>
+                    <a
+                      href="javascript:;;"
+                      @click="
+                        $router.push({ name: 'Privacy Policy' }),
+                          $store.dispatch('setResources', [
+                            'page_title',
+                            'Privacy Policy'
+                          ])
+                      "
+                      >privacy statement.</a
+                    >
                   </p>
                 </div>
                 <div class="submit-form-button form-group">
