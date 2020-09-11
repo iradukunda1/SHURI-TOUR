@@ -46,6 +46,22 @@ const router = new VueRouter({
           name: "Request-Tour",
           component: () =>
             import("@/components/webLayout/pages/tours/request-tour")
+        },
+        {
+          path: "/healthy-safety",
+          name: "Healthy & Safety",
+          component: () =>
+            import("@/components/webLayout/pages/views/healthy-and-safety")
+        },
+        {
+          path:"/contact-us",
+          name:"Contact Us",
+          component: ()=>import("@/components/webLayout/pages/views/contact-us")
+        },
+        {
+          path:"/privacy-policy",
+          name:"Privacy Policy",
+          component: ()=>import("@/components/webLayout/pages/views/privacy-policy")
         }
       ]
     },

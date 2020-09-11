@@ -15,18 +15,19 @@
               <div class="row mx-0">
                 <p class="fa-14 col-md-12 col-sm-12">
                   <strong
-                    >{{ tour.days }}-day program from Rwanda including Kigali, Butare,
-                    Musanze &amp; Rwamagana</strong
+                    >{{ tour.days }}-day{{ tour.days > 1 ? "s" : "" }} program
+                    from Rwanda including Kigali, Butare, Musanze &amp;
+                    Rwamagana</strong
                   >
                 </p>
               </div>
               <div class="location-map row mx-0 col-md-12">
                 <div class="map-container image-container col-md-12 col-sm-12">
-                 <GmapMap
-                    :center="{lat:1.9441, lng:30.0619}"
+                  <GmapMap
+                    :center="{ lat: 1.9441, lng: 30.0619 }"
                     :zoom="4"
                     style="width: 100%; height: 300px"
-                ></GmapMap>
+                  ></GmapMap>
                 </div>
               </div>
               <div class="our-difference row mx-0 col-md-12">
@@ -50,8 +51,8 @@
                   </p>
                   <ul>
                     <li class="li1">
-                      {{ tour.days }}-day program fits into the school holidays – don’t miss
-                      any school
+                      {{ tour.days }}-day{{ tour.days > 1 ? "s" : "" }} program
+                      fits into the school holidays – don’t miss any school
                     </li>
                     <li class="li1">Visit key sites across Rwanda</li>
                     <li class="li1">
@@ -151,7 +152,9 @@
                     <tbody>
                       <tr>
                         <td><p class="detail-label">Duration:</p></td>
-                        <td class="fa-12 text-black-50">16 Days</td>
+                        <td class="fa-12 text-black-50">
+                          {{ tour.days }} Day{{ tour.days > 1 ? "s" : "" }}
+                        </td>
                       </tr>
                       <tr>
                         <td><p class="detail-label">Available Seats:</p></td>
@@ -159,7 +162,9 @@
                       </tr>
                       <tr>
                         <td><p class="detail-label">Price From:</p></td>
-                        <td class="adult-price fa-12 text-black-50">{{ tour.price  }}</td>
+                        <td class="adult-price fa-12 text-black-50">
+                          {{ tour.price }}
+                        </td>
                       </tr>
                     </tbody>
                   </table>

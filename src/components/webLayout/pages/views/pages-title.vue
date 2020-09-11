@@ -2,14 +2,25 @@
   <div class="page-title-container w-100">
     <div class="container px-0 d-table">
       <div
-        v-if="$route.name == 'Tour Profile' || $route.name == 'Request-Tour'"
+        v-if="
+          $route.name == 'Tour Profile' ||
+            $route.name == 'Request-Tour' ||
+            $route.name == 'Healthy & Safety' ||
+            $route.name == 'Contact Us' ||
+            $route.name == 'Privacy Policy'
+        "
         class="page-title-left text-white mb-0"
       >
-        <h2 class="text-uppercase text-truncate">{{ resources.page_title }}</h2>
+        <h2
+          class="text-truncate"
+          :class="
+            $route.name == 'Tour Profile' ? 'text-uppercase' : 'text-capitalize'
+          "
+        >
+          {{ resources.page_title }}
+        </h2>
       </div>
-      <ul
-        class="pull-right p-0 m-0 list-unstyled"
-      >
+      <ul class="pull-right p-0 m-0 list-unstyled">
         <li
           class="cursor-pointer text-center text-white pr-1"
           @click="$router.push({ name: 'Home' })"
@@ -18,7 +29,13 @@
         </li>
         <li
           class="small text-white text-warning mb-0"
-          v-if="$route.name == 'Tour Profile' || $route.name == 'Request-Tour'"
+          v-if="
+            $route.name == 'Tour Profile' ||
+              $route.name == 'Request-Tour' ||
+              $route.name == 'Healthy & Safety' ||
+              $route.name == 'Contact Us' ||
+              $route.name == 'Privacy Policy'
+          "
         >
           {{ resources.page_title }}
         </li>
@@ -28,7 +45,7 @@
 </template>
 
 <script>
-import {mapGetters} from "vuex";
+import { mapGetters } from "vuex";
 
 export default {
   name: "pages-title",
@@ -77,7 +94,7 @@ export default {
     }
   }
 }
-@media screen and (max-width: 996px){
+@media screen and (max-width: 996px) {
   .page-title-container {
     .container {
       margin: 0 !important;
@@ -86,7 +103,7 @@ export default {
         display: none !important;
       }
       .pull-right {
-        li:nth-child(2){
+        li:nth-child(2) {
           font-size: 50% !important;
         }
       }

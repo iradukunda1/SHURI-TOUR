@@ -60,7 +60,18 @@
         </li>
         <li>PARTNERS</li>
         <li>TEACHERS</li>
-        <li>HEALTH & SAFETY</li>
+        <li
+          :class="{ 'active-link': $route.name == 'Healthy & Safety' }"
+          @click="
+            $router.push({ name: 'Healthy & Safety' }),
+              $store.dispatch('setResources', [
+                'page_title',
+                'Healthy & Safety'
+              ])
+          "
+        >
+          HEALTH & SAFETY
+        </li>
         <li
           :class="{ 'active-link': showAboutDropDown }"
           @mouseover="showAboutDropDown = !showAboutDropDown"
@@ -68,7 +79,15 @@
         >
           ABOUT US
         </li>
-        <li>CONTACT US</li>
+        <li
+          :class="{ 'active-link': $route.name == 'Contact Us' }"
+          @click="
+            $router.push({ name: 'Contact Us' }),
+              $store.dispatch('setResources', ['page_title', 'contact-us'])
+          "
+        >
+          CONTACT US
+        </li>
       </ul>
       <div
         class="about-us-dropDown"
