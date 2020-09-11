@@ -218,73 +218,73 @@ export default {
             {
               name: "PCB",
               classrooms: [
-                { classCode: "s04", terms: ["1ST TERM", "Term 2", "Term 3"] },
-                { classCode: "s05", terms: ["1ST TERM", "Term 2", "Term 3"] },
-                { classCode: "s06", terms: ["1ST TERM", "Term 2", "Term 3"] },
-                { classCode: "s03", terms: ["1ST TERM", "Term 2", "Term 3"] }
+                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
               ]
             },
             {
               name: "MCB",
               classrooms: [
-                { classCode: "s04", terms: ["1ST TERM", "Term 2", "Term 3"] },
-                { classCode: "s05", terms: ["1ST TERM", "Term 2", "Term 3"] },
-                { classCode: "s06", terms: ["1ST TERM", "Term 2", "Term 3"] },
-                { classCode: "s03", terms: ["1ST TERM", "Term 2", "Term 3"] }
+                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
               ]
             },
             {
               name: "PCM",
               classrooms: [
-                { classCode: "s04", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s05", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s06", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s03", terms: ["Term 1", "Term 2", "Term 3"] }
+                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
               ]
             },
             {
               name: "BCG",
               classrooms: [
-                { classCode: "s04", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s05", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s06", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s03", terms: ["Term 1", "Term 2", "Term 3"] }
+                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
               ]
             },
             {
               name: "MEG",
               classrooms: [
-                { classCode: "s04", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s05", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s06", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s03", terms: ["Term 1", "Term 2", "Term 3"] }
+                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
               ]
             },
             {
               name: "MPG",
               classrooms: [
-                { classCode: "s04", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s05", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s06", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s03", terms: ["Term 1", "Term 2", "Term 3"] }
+                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
               ]
             },
             {
               name: "MCE",
               classrooms: [
-                { classCode: "s04", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s05", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s06", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s03", terms: ["Term 1", "Term 2", "Term 3"] }
+                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
               ]
             },
             {
               name: "MPC",
               classrooms: [
-                { classCode: "s03", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s04", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s05", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s06", terms: ["Term 1", "Term 2", "Term 3"] }
+                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
               ]
             }
           ]
@@ -295,28 +295,28 @@ export default {
             {
               name: "LFK",
               classrooms: [
-                { classCode: "s04", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s05", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s06", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s03", terms: ["Term 1", "Term 2", "Term 3"] }
+                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
               ]
             },
             {
               name: "LKK",
               classrooms: [
-                { classCode: "s04", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s05", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s06", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s03", terms: ["Term 1", "Term 2", "Term 3"] }
+                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
               ]
             },
             {
               name: "LKF",
               classrooms: [
-                { classCode: "s04", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s05", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s06", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s03", terms: ["Term 1", "Term 2", "Term 3"] }
+                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
               ]
             }
           ]
@@ -327,55 +327,55 @@ export default {
             {
               name: "HEG",
               classrooms: [
-                { classCode: "s04", terms: ["1ST TERM", "Term 2", "Term 3"] },
-                { classCode: "s05", terms: ["1ST TERM", "Term 2", "Term 3"] },
-                { classCode: "s06", terms: ["1ST TERM", "Term 2", "Term 3"] },
-                { classCode: "s03", terms: ["1ST TERM", "Term 2", "Term 3"] }
+                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
               ]
             },
             {
               name: "HEL",
               classrooms: [
-                { classCode: "s04", terms: ["1ST TERM", "Term 2", "Term 3"] },
-                { classCode: "s05", terms: ["1ST TERM", "Term 2", "Term 3"] },
-                { classCode: "s06", terms: ["1ST TERM", "Term 2", "Term 3"] },
-                { classCode: "s03", terms: ["1ST TERM", "Term 2", "Term 3"] }
+                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
               ]
             },
             {
               name: "LEG",
               classrooms: [
-                { classCode: "s04", terms: ["1ST TERM", "Term 2", "Term 3"] },
-                { classCode: "s05", terms: ["1ST TERM", "Term 2", "Term 3"] },
-                { classCode: "s06", terms: ["1ST TERM", "Term 2", "Term 3"] },
-                { classCode: "s03", terms: ["1ST TERM", "Term 2", "Term 3"] }
+                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
               ]
             },
             {
               name: "HGL",
               classrooms: [
-                { classCode: "s04", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s05", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s06", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s03", terms: ["Term 1", "Term 2", "Term 3"] }
+                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
               ]
             },
             {
               name: "REHL",
               classrooms: [
-                { classCode: "s04", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s05", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s06", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s03", terms: ["Term 1", "Term 2", "Term 3"] }
+                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
               ]
             },
             {
               name: "REHG",
               classrooms: [
-                { classCode: "s04", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s05", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s06", terms: ["Term 1", "Term 2", "Term 3"] },
-                { classCode: "s03", terms: ["Term 1", "Term 2", "Term 3"] }
+                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
+                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
               ]
             }
           ]
