@@ -8,7 +8,8 @@ export default {
       premium: "/img/logos/shuri-book-logo.png",
       description:
         "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
-      time_interval: "28/03/2018 - 28/03/2048"
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 16
     },
     {
       id: "lkewuh87i3u0-wp9oijdnjuyh;p'lw",
@@ -18,7 +19,8 @@ export default {
       image: "/img/Innovative-Educational-Activities.jpg",
       description:
         "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
-      time_interval: "28/03/2018 - 28/03/2048"
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 10
     },
     {
       id: "liu879%$^&*45rtyghjkq8iu;p'lw",
@@ -27,7 +29,8 @@ export default {
       image: "/img/inyange.jpg",
       description:
         "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
-      time_interval: "28/03/2018 - 28/03/2048"
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 12
     },
     {
       id: ";slkajoiuoj0-98390po%^;p'lw",
@@ -36,7 +39,8 @@ export default {
       image: "/img/volkswagen.jpg",
       description:
         "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
-      time_interval: "28/03/2018 - 28/03/2048"
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 8
     },
     {
       id: ";fdrep09830wpoiekjop-98390po%^;p'lw",
@@ -45,7 +49,8 @@ export default {
       image: "/img/plane.jpg",
       description:
         "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
-      time_interval: "28/03/2018 - 28/03/2048"
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1
     },
     {
       id: ";kjes-iuou8769&(*78-98390po%^;p'lw",
@@ -54,7 +59,8 @@ export default {
       image: "/img/Quality-features-benefits-for-Students.jpg",
       description:
         "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
-      time_interval: "28/03/2018 - 28/03/2048"
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1
     }
   ]
 };

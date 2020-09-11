@@ -15,8 +15,8 @@
               <div class="row mx-0">
                 <p class="fa-14 col-md-12 col-sm-12">
                   <strong
-                    >16-day program from Australia including Venice, Florence,
-                    Rome &amp; Sorrento</strong
+                    >{{ tour.days }}-day program from Rwanda including Kigali, Butare,
+                    Musanze &amp; Rwamagana</strong
                   >
                 </p>
               </div>
@@ -50,10 +50,10 @@
                   </p>
                   <ul>
                     <li class="li1">
-                      16-day program fits into the school holidays – don’t miss
+                      {{ tour.days }}-day program fits into the school holidays – don’t miss
                       any school
                     </li>
-                    <li class="li1">Visit key sites across Italy</li>
+                    <li class="li1">Visit key sites across Rwanda</li>
                     <li class="li1">
                       Experience a variety of areas, ranging from cities to
                       villages, inland to coast
@@ -159,7 +159,7 @@
                       </tr>
                       <tr>
                         <td><p class="detail-label">Price From:</p></td>
-                        <td class="adult-price fa-12 text-black-50">$2935</td>
+                        <td class="adult-price fa-12 text-black-50">{{ tour.price  }}</td>
                       </tr>
                     </tbody>
                   </table>
