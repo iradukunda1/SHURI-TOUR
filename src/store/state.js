@@ -2,7 +2,7 @@ export default {
   resources: {
     tour:{},
     trigger: {},
-    page_title: {}
+    page_title: null
   },
   accessories: {
     view: null,

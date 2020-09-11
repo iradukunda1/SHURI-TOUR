@@ -20,79 +20,14 @@
                   >
                 </p>
               </div>
-              <div class="budget-exp-content-container container px-0 py-4">
-                <div class="budget-exp-context col-sm-12 mx-0 row">
-                  <div class="budget-exp-context-container col-sm-8">
-                    <div class="tour-budget-exp-context-container">
-                      <p>
-                        This tour is part of our&nbsp;<strong
-                          >BEE (Budget Educational Experience)</strong
-                        >&nbsp;program. The standard program<span
-                          style="text-decoration: line-through;"
-                          >s</span
-                        >
-                        provides accommodation (including pre-paid city taxes in
-                        Italy!), breakfasts, coach transfers and one excursion
-                        per city, which allows for a lot of flexibility, plus
-                        you can add one or more optional packs to your BEE
-                        program to increase your educational content and reduce
-                        your planning:
-                      </p>
-                      <p>
-                        Our Pedagogical Pack of
-                        <strong>classroom lessons</strong> and
-                        <strong><em>Outdoor Classroom</em></strong> excursions,
-                        led by your teacher
-                      </p>
-                      <ul class="list-unstyled">
-                        <li>
-                          Additional <strong>excursions</strong> and
-                          <strong>guided tours</strong> in other cities from our
-                          Excursion Packs
-                        </li>
-                        <li>
-                          All <strong>dinners</strong> included – advance
-                          bookings for individual dietary requirements ensures
-                          that food quantity and quality are equivalent to your
-                          expectation of adult groups’ standards.
-                        </li>
-                        <li>
-                          A Mobile Wifi Hotspot (allowing up to 10 devices) so
-                          you can hit the ground running and avoid bill-shock,
-                          pre-loaded with 25€
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="budget-exp-logo-container col-sm-4 mb-3 h-fit">
-                    <img
-                      src="/img/logos/BEE-LOGO-M_-BLUE_BACKGROUND_RGB.jpg"
-                      class="w-100"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="partner-content row mx-0 col-md-12">
-                <div class="col-md-6 col-sm-6 partner-content-logo">
-                  <img src="/img/logos/santanna-logo.jpg" class="w-100" />
-                </div>
-                <div class="col-md-6 col-sm-6 partner-content-context">
-                  <p class="p1">
-                    For our Pedagogy Pack, our Education Partner,<strong
-                      >&nbsp;Sant’Anna Institute&nbsp;</strong
-                    >caters for Cross Curricular (minimum 8 students per
-                    subject) for the following subjects: Italian,
-                    Latin,&nbsp;Archaeology &amp; History, Environmental
-                    Studies, Geology, History of Religions, History of the
-                    Mafia, Marine Biology, Visual Arts and Volcanology. Contact
-                    us for more detailed course content and outcomes. Read more
-                    about our Education Partners
-                    <a href="javascript:;;">here</a>
-                  </p>
-                </div>
-              </div>
               <div class="location-map row mx-0 col-md-12">
-                <div class="map-container image-container"></div>
+                <div class="map-container image-container col-md-12 col-sm-12">
+                 <GmapMap
+                    :center="{lat:1.9441, lng:30.0619}"
+                    :zoom="4"
+                    style="width: 100%; height: 300px"
+                ></GmapMap>
+                </div>
               </div>
               <div class="our-difference row mx-0 col-md-12">
                 <div class="difference-content-context pt-4">
@@ -210,7 +145,7 @@
             <div class="schedule-list col-md-12">
               <div class="schedule-container d-table mb-4 w-100">
                 <div
-                  class="schedule-table-cell bg-white justify-content-between row mx-0 w-100 features"
+                  class="schedule-table-cell py-2 bg-white justify-content-between row mx-0 w-100 features"
                 >
                   <table class="ml-3 my-4">
                     <tbody>
@@ -229,7 +164,7 @@
                     </tbody>
                   </table>
                   <button
-                    class="btn btn-primary text-white my-auto mr-4 rounded-0"
+                    class="btn btn-primary text-white my-auto mx-3 col-md-3 rounded-0"
                     @click="request()"
                   >
                     Request a Tour Proposal
