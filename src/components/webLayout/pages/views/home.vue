@@ -399,7 +399,7 @@ export default {
     }
   },
   mounted() {
-    // this.autoSlide();
+    this.autoSlide();
   }
 };
 </script>
