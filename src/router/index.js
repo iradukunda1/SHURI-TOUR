@@ -62,6 +62,11 @@ const router = new VueRouter({
           path:"/privacy-policy",
           name:"Privacy Policy",
           component: ()=>import("@/components/webLayout/pages/views/privacy-policy")
+        },
+        {
+          path:"/about-us",
+          name:"About Us",
+          component: ()=>import("@/components/webLayout/pages/views/about-us")
         }
       ]
     },

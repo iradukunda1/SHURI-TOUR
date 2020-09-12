@@ -135,7 +135,17 @@
                       >
                       <em
                         >Flights and airport taxes not included
-                        <a href="javascript:;;">(why?)</a>
+                        <a
+                          href="javascript:;;"
+                          @click="
+                            $router.push({ name: 'About Us', hash: '#why-us' }),
+                              $store.dispatch('setResources', [
+                                'page_title',
+                                'about us'
+                              ])
+                          "
+                          >(why?)</a
+                        >
                         – can be added as an option.</em
                       >
                     </p>

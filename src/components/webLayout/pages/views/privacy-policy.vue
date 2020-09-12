@@ -1,7 +1,7 @@
 <template>
-  <div class="privacy-policy bg-grey w-100">
+  <div class="privacy-policy bg-grey w-100 mb-5">
     <div class="contact-us-context-container container px-0 py-5">
-      <div class="row col-md-12 col-sm-12 privacy-context">
+      <div class="row col-md-12 col-sm-12 privacy-context mx-0">
         <p class="p1">
           <span
             >Shuri Tours Company, a division of Allegro 6 Pty Ltd, ACN 154 092
@@ -44,7 +44,7 @@
             we collect personal information such as:</span
           >
         </p>
-        <p class="p1">
+        <p class="p1 pl-3">
           <span
             >(a) title (gender);<br />
             (b) name;<br />
@@ -79,7 +79,7 @@
             including the following methods:</span
           >
         </p>
-        <p class="p1">
+        <p class="p1 pl-3">
           <span
             >(a) information given directly by you when making a booking either
             with us. This information will usually be provided in person during
@@ -104,7 +104,7 @@
             providing travel related services, including:</span
           >
         </p>
-        <p class="p1">
+        <p class="p1 pl-3">
           <span
             >(a) to make bookings with travel service providers, such as
             airlines, hotels and tours, on your behalf;<br />
@@ -134,7 +134,7 @@
             following circumstances:</span
           >
         </p>
-        <p class="p1">
+        <p class="p1 pl-3">
           <span
             >(a) the provision of marketing services, in which case confidential
             data including health information, religious practices or details of
@@ -142,14 +142,14 @@
             services.</span
           >
         </p>
-        <p class="p2">
-          <span
+        <p class="p2 pl-3">
+          <span class="pl-2"
             >(b) as required by law, such as where unlawful activity has been
             engaged in, or is suspected of being engaged in, as required by law
             enforcement officials or agencies; and</span
           >
         </p>
-        <p class="p3">
+        <p class="p3 pl-3">
           <span
             ><br />
             (c) to travel service providers, such as travel wholesalers, tour
@@ -192,7 +192,7 @@
           >
         </p>
         <p class="p1"><span>We take reasonable steps to:</span></p>
-        <p class="p1">
+        <p class="p1 pl-3">
           <span
             >(a) ensure that personal information that we collect, use and
             disclose is accurate, complete, up-to-date and relevant, having
@@ -214,7 +214,7 @@
             information include the following:</span
           >
         </p>
-        <p class="p1">
+        <p class="p1 pl-3">
           <span
             >(a) employing industry standard techniques such as firewalls, virus
             scanning tools and encryption;<br />
@@ -232,12 +232,11 @@
             security breach.</span
           >
         </p>
-        <p class="p1"><span>5. Unsubscribing</span></p>
         <p class="p1">
           <span
-            >You can unsubscribe from receiving communications from us at any
-            time. &nbsp;If you do not wish to receive any further marketing
-            material from us click on the unsubscribe link.</span
+            >5. Unsubscribing You can unsubscribe from receiving communications
+            from us at any time. &nbsp;If you do not wish to receive any further
+            marketing material from us click on the unsubscribe link.</span
           >
         </p>
         <p class="p1">
@@ -294,11 +293,10 @@
             accordingly.</span
           >
         </p>
-        <p class="p1"><span>10. Complaints</span></p>
         <p class="p1">
           <span
-            >If you have a complaint about the way we have dealt with your
-            personal information, or if there has been a breach of the
+            >10. Complaints If you have a complaint about the way we have dealt
+            with your personal information, or if there has been a breach of the
             Australian Privacy Principles, please contact us directly using the
             details set out below. We will respond to your complaint within a
             reasonable time.</span

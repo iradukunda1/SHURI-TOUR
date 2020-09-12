@@ -7,7 +7,8 @@
             $route.name == 'Request-Tour' ||
             $route.name == 'Healthy & Safety' ||
             $route.name == 'Contact Us' ||
-            $route.name == 'Privacy Policy'
+            $route.name == 'Privacy Policy' ||
+            $route.name == 'About Us'
         "
         class="page-title-left text-white mb-0"
       >
@@ -34,7 +35,8 @@
               $route.name == 'Request-Tour' ||
               $route.name == 'Healthy & Safety' ||
               $route.name == 'Contact Us' ||
-              $route.name == 'Privacy Policy'
+              $route.name == 'Privacy Policy' ||
+              $route.name == 'About Us'
           "
         >
           {{ resources.page_title }}

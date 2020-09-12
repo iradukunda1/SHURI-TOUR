@@ -5,12 +5,21 @@
     >
       <p class="pr-1 mb-0">Terms & Conditions</p>
       |
-      <p class="mx-3 mb-0">Privacy Policy</p>
+      <p class="mx-3 mb-0 privacy-policy">
+        <a
+          href="javascript:;;"
+          @click="
+            $router.push({ name: 'Privacy Policy' }),
+              $store.dispatch('setResources', ['page_title', 'Privacy Policy'])
+          "
+          >Privacy Policy</a
+        >
+      </p>
       |
       <div class="rights mb-0 pl-1">
         <span>© </span><span class="copyright-year">2020</span
         ><span> SHURI - TOUR</span><span>. </span
-        ><span>All Rights Reserved.</span>
+        ><span> All Rights Reserved.</span>
       </div>
     </div>
   </footer>
@@ -22,6 +31,11 @@ export default {
 </script>
 <style lang="scss" scoped>
 .footer-classic {
+  .privacy-policy {
+    a {
+      text-decoration: none;
+    }
+  }
 }
 @media screen and (max-width: 768px) {
 }

@@ -45,7 +45,7 @@
                 </b-card>
               </b-collapse>
             </div>
-            <div class="tours-type-options">
+            <div class="tours-type-options mb-2">
               <h4
                 class="change-search p-3 bg-white mb-0 fa-18 cursor-pointer d-flex w-100"
                 :aria-expanded="showTourTypeLists ? 'true' : 'false'"

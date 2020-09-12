@@ -27,7 +27,7 @@
           by us or supplied by trusted agents. They provide a high standard of
           vehicles and drivers, which are both trustworthy and safe, and
           compliant with local regulations. Seat belts on coaches are available
-          in most European countries.
+          in most Rwanda country.
         </p>
         <p class="fa-14">
           <strong

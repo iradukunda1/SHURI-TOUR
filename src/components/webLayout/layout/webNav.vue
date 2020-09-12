@@ -1,6 +1,9 @@
 <template>
   <main class="main web-nav-layout d-block w-100">
-    <div class="logos-container d-flex border-bottom">
+    <div
+      class="logos-container d-flex border-bottom"
+      @mouseover="showAboutDropDown = false"
+    >
       <p class="shuri-logo mb-0 py-2 mt-2">
         <span
           class="logo d-block m-auto cursor-pointer"
@@ -61,6 +64,7 @@
         <li>PARTNERS</li>
         <li>TEACHERS</li>
         <li
+          @mouseover="showAboutDropDown = false"
           :class="{ 'active-link': $route.name == 'Healthy & Safety' }"
           @click="
             $router.push({ name: 'Healthy & Safety' }),
@@ -73,17 +77,21 @@
           HEALTH & SAFETY
         </li>
         <li
-          :class="{ 'active-link': showAboutDropDown }"
           @mouseover="showAboutDropDown = !showAboutDropDown"
-          @mouseleave="showAboutDropDown = !showAboutDropDown"
+          :class="{
+            'active-link': showAboutDropDown || $route.name == 'About Us'
+          }"
+          @click="closeDropDown(),
+                $router.push({ name: 'About Us', hash: '#who-we-are' })"
         >
           ABOUT US
         </li>
         <li
+          @mouseover="showAboutDropDown = false"
           :class="{ 'active-link': $route.name == 'Contact Us' }"
           @click="
             $router.push({ name: 'Contact Us' }),
-              $store.dispatch('setResources', ['page_title', 'contact-us'])
+              $store.dispatch('setResources', ['page_title', 'contact us'])
           "
         >
           CONTACT US
@@ -95,11 +103,38 @@
         v-if="showAboutDropDown"
       >
         <ul class="p-0 m-0">
-          <li>OurTeam</li>
-          <li>Who we are</li>
-          <li>Why us?</li>
-          <li>The price we quote</li>
-          <li>Financial Security</li>
+          <li
+            @click="
+              closeDropDown(),
+                $router.push({ name: 'About Us', hash: '#who-we-are' })
+            "
+          >
+            Who we are
+          </li>
+          <li
+            @click="
+              closeDropDown(),
+                $router.push({ name: 'About Us', hash: '#why-us' })
+            "
+          >
+            Why us?
+          </li>
+          <li
+            @click="
+              closeDropDown(),
+                $router.push({ name: 'About Us', hash: '#the-price-we-quote' })
+            "
+          >
+            The price we quote
+          </li>
+          <li
+            @click="
+              closeDropDown(),
+                $router.push({ name: 'About Us', hash: '#financial-security' })
+            "
+          >
+            Financial Security
+          </li>
         </ul>
       </div>
     </div>
@@ -118,6 +153,10 @@ export default {
     };
   },
   methods: {
+    closeDropDown() {
+      this.showAboutDropDown = !this.showAboutDropDown;
+      this.$store.dispatch('setResources', ['page_title', 'about us'])
+    },
     toggleSideBar() {
       const navLinks = document.querySelectorAll(
         ".links-container .nav-links li"
