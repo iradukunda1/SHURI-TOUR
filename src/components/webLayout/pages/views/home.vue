@@ -9,7 +9,7 @@
       <!--      </div>-->
       <div class="slider-content position-relative w-100 h-100">
         <div class="slide current">
-          <img class="first-slide-image w-100" src="/img/plane.jpg" />
+          <img class="first-slide-image w-100 h-100" src="/img/plane.jpg" />
           <div class="air-craft-content w-100 mt-5">
             <h1 class="plane-header mb-0" @click="fadingContent()">
               WHY WE ARE DIFFERENT:
@@ -57,7 +57,10 @@
               Authentic <br />
               cross-curricular options
             </h1>
-            <p class="authentic-curricular-button mx-auto">
+            <p
+              class="authentic-curricular-button mx-auto"
+              @click="requestTour()"
+            >
               Request a Tour Proposal
             </p>
           </div>
@@ -72,7 +75,10 @@
               High Calibre <br />
               Educational Content
             </h1>
-            <p class="calibre-education-button mx-auto">
+            <p
+              class="calibre-education-button mx-auto cursor-pointer"
+              @click="requestTour()"
+            >
               Request a Tour Proposal
             </p>
           </div>
@@ -100,7 +106,10 @@
             <h1 class="students-benefits-header">
               Quality features <br />& benefits for Students
             </h1>
-            <p class="students-benefits-button mx-auto">
+            <p
+              class="students-benefits-button mx-auto cursor-pointer"
+              @click="requestTour()"
+            >
               Request a Tour Proposal
             </p>
           </div>
@@ -327,6 +336,9 @@ export default {
     };
   },
   methods: {
+    requestTour() {
+      this.$router.push({ name: "Tours" });
+    },
     tourProfile(tour) {
       this.$router.push({ name: "Tour Profile", params: { id: tour.id } });
       this.$store.dispatch("setResources", ["tour", tour]);
@@ -717,7 +729,7 @@ export default {
             }
             .calibre-education-button {
               transform: translateY(0px);
-              transition: all 0.3s  ease 3s;
+              transition: all 0.3s ease 3s;
               opacity: 1;
             }
           }
