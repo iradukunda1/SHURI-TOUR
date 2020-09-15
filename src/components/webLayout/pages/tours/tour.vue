@@ -16,8 +16,7 @@
                 <p class="fa-14 col-md-12 col-sm-12">
                   <strong
                     >{{ tour.days }}-day{{ tour.days > 1 ? "s" : "" }} program
-                    from Rwanda including Kigali, Butare, Musanze &amp;
-                    Rwamagana</strong
+                    from Rwanda including {{ tour.location }}</strong
                   >
                 </p>
               </div>
@@ -54,10 +53,11 @@
                       {{ tour.days }}-day{{ tour.days > 1 ? "s" : "" }} program
                       fits into the school holidays – don’t miss any school
                     </li>
-                    <li class="li1">Visit key sites across Rwanda</li>
                     <li class="li1">
-                      Experience a variety of areas, ranging from cities to
-                      villages, inland to coast
+                      Visit key sites across {{ tour.location }}
+                    </li>
+                    <li class="li1">
+                      Experience of <b>{{ tour.experience }}</b>
                     </li>
                     <li class="li1">
                       Gain a broad cultural exposure through diverse experiences
@@ -103,7 +103,7 @@
                   class="tour-slider-image-container mb-3 d-flex position-relative"
                 >
                   <div class="tour-slider-image-context position-relative">
-                    <img :src="images[activeImage]" class="w-100" />
+                    <img :src="images[activeImage]" class="w-100 h-100" />
                   </div>
                   <div
                     class="tour-slider-options d-inline-flex px-4 position-absolute w-100 justify-content-between"
@@ -211,7 +211,7 @@ export default {
         "/img/old-prison-egypt.jpg",
         "/img/birreria.jpg"
       ],
-      intervalTime: 9000,
+      intervalTime: 3000,
       auto: true,
       silderInterval: ""
     };
@@ -333,7 +333,7 @@ export default {
     height: 460px;
     transition: all 0.3s ease;
     img {
-      animation: zoomOut 1.3s ease;
+      object-fit: cover;
     }
   }
   .tour-slider-options {

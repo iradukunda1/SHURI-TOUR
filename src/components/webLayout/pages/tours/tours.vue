@@ -7,7 +7,8 @@
             class="search-results-title px-3 py-3 bg-white border-bottom-4px fa-18"
           >
             <i class="fas fa-search text-warning fa-16 mr-2"></i
-            ><b>{{ tours.length }}</b> results found.
+            ><b>{{ (filteredTours && filteredTours.length) || 0 }}</b> results
+            found.
           </h4>
           <div class="tours-filters">
             <div class="tours-search-container mb-1">
@@ -29,15 +30,17 @@
               </h4>
               <b-collapse id="collapse-1" v-model="showForm">
                 <b-card class="rounded-0 border-0 search-form">
-                  <form>
+                  <form @submit.prevent>
                     <label>Your Destination</label>
                     <input
                       type="text"
                       class="input-text px-2 fa-14 w-100"
                       placeholder="Enter a destination or tour name"
+                      v-model="search"
                     />
                     <button
                       class="submit-search-button text-white w-100 border-0 text-uppercase d-flex mt-4 btn rounded-0 fa-14"
+                      @click="search = ''"
                     >
                       search again <i class="fas fa-check ml-auto pt-1"></i>
                     </button>
@@ -84,7 +87,8 @@
                       class="px-1"
                       @click="
                         (showClickedType.department = null),
-                          (showClickedType.classCode = null)
+                          (showClickedType.classCode = null),
+                          (showClickedType.term = null)
                       "
                       :class="
                         showClickedType.title && !showClickedType.department
@@ -94,7 +98,10 @@
                       >{{ showClickedType.title }}</span
                     >
                     <span
-                      @click="showClickedType.classCode = null"
+                      @click="
+                        (showClickedType.classCode = null),
+                          (showClickedType.term = null)
+                      "
                       v-if="showClickedType.department"
                       class="pr-1"
                       :class="
@@ -127,7 +134,7 @@
                         v-for="(type, index) in tourTypes"
                         :key="index"
                         class="fa-13 cursor-pointer mb-1 p-2 bg-grey text-black w-100 d-flex"
-                        @click="typeClicked(type)"
+                        @click="typeClicked(type.title)"
                       >
                         <span>{{ type.title }} </span>
                       </li>
@@ -165,6 +172,11 @@
                       <li
                         v-for="(term, index) in savedTerms"
                         :key="index"
+                        @click="showClickedType.term = term"
+                        :class="{
+                          'bg-primary text-warning':
+                            showClickedType.term == term
+                        }"
                         class="fa-13 cursor-pointer mb-1 p-2 bg-grey text-black w-100 d-flex"
                       >
                         <span>{{ term }} </span>
@@ -177,8 +189,22 @@
           </div>
         </div>
         <div class="tours-list-container col-sm-8 col-md-9">
-          <list-view :tours="tours" @clicked="handleTourClicked" />
-          <ul class="page-numbers list-unstyled row mx-0">
+          <list-view
+            :tours="filteredTours"
+            @clicked="handleTourClicked"
+            v-if="filteredTours.length"
+          />
+          <div
+            class="empty bg-white p-3 mb-4 border rounded"
+            v-if="!filteredTours.length"
+          >
+            <img src="/img/logos/empty.png" class="w-100" />
+            <!--            <p class="text-black-50 fa-14 mb-0 text-center">No available result for any tour</p>-->
+          </div>
+          <ul
+            class="page-numbers list-unstyled row mx-0"
+            v-if="filteredTours && filteredTours.length > 40"
+          >
             <li class="active">1</li>
             <li>2</li>
             <li>3</li>
@@ -202,6 +228,7 @@ export default {
       showForm: false,
       showTourTypeLists: false,
       tours: tours.tours,
+      search: "",
       showClickedType: {
         title: null,
         department: null,
@@ -218,73 +245,169 @@ export default {
             {
               name: "PCB",
               classrooms: [
-                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
+                {
+                  classCode: "s04",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s05",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s06",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s03",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                }
               ]
             },
             {
               name: "MCB",
               classrooms: [
-                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
+                {
+                  classCode: "s04",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s05",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s06",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s03",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                }
               ]
             },
             {
               name: "PCM",
               classrooms: [
-                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
+                {
+                  classCode: "s04",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s05",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s06",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s03",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                }
               ]
             },
             {
               name: "BCG",
               classrooms: [
-                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
+                {
+                  classCode: "s04",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s05",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s06",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s03",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                }
               ]
             },
             {
               name: "MEG",
               classrooms: [
-                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
+                {
+                  classCode: "s04",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s05",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s06",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s03",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                }
               ]
             },
             {
               name: "MPG",
               classrooms: [
-                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
+                {
+                  classCode: "s04",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s05",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s06",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s03",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                }
               ]
             },
             {
               name: "MCE",
               classrooms: [
-                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
+                {
+                  classCode: "s04",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s05",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s06",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s03",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                }
               ]
             },
             {
               name: "MPC",
               classrooms: [
-                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
+                {
+                  classCode: "s03",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s04",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s05",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s06",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                }
               ]
             }
           ]
@@ -295,28 +418,64 @@ export default {
             {
               name: "LFK",
               classrooms: [
-                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
+                {
+                  classCode: "s04",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s05",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s06",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s03",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                }
               ]
             },
             {
               name: "LKK",
               classrooms: [
-                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
+                {
+                  classCode: "s04",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s05",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s06",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s03",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                }
               ]
             },
             {
               name: "LKF",
               classrooms: [
-                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
+                {
+                  classCode: "s04",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s05",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s06",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s03",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                }
               ]
             }
           ]
@@ -327,55 +486,127 @@ export default {
             {
               name: "HEG",
               classrooms: [
-                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
+                {
+                  classCode: "s04",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s05",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s06",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s03",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                }
               ]
             },
             {
               name: "HEL",
               classrooms: [
-                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
+                {
+                  classCode: "s04",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s05",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s06",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s03",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                }
               ]
             },
             {
               name: "LEG",
               classrooms: [
-                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
+                {
+                  classCode: "s04",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s05",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s06",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s03",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                }
               ]
             },
             {
               name: "HGL",
               classrooms: [
-                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
+                {
+                  classCode: "s04",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s05",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s06",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s03",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                }
               ]
             },
             {
               name: "REHL",
               classrooms: [
-                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
+                {
+                  classCode: "s04",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s05",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s06",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s03",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                }
               ]
             },
             {
               name: "REHG",
               classrooms: [
-                { classCode: "s04", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s05", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s06", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] },
-                { classCode: "s03", terms: ["1ST TERM", "2ND TERM", "3RD TERM"] }
+                {
+                  classCode: "s04",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s05",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s06",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                },
+                {
+                  classCode: "s03",
+                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
+                }
               ]
             }
           ]
@@ -384,13 +615,13 @@ export default {
     };
   },
   methods: {
-    typeClicked(type) {
-      this.showClickedType.title = type.title;
-      this.filteredDepartment(type);
+    typeClicked(data) {
+      this.showClickedType.title = data;
+      this.filteredDepartment(data);
     },
-    filteredDepartment(type) {
+    filteredDepartment(data) {
       for (let i = 0; i < this.tourTypes.length; i++) {
-        if (this.tourTypes[i].title === type.title) {
+        if (this.tourTypes[i].title === data) {
           this.savedDepartments = { ...this.tourTypes[i] };
         }
       }
@@ -428,7 +659,53 @@ export default {
       this.$store.dispatch("setResources", ["page_title", tour.title]);
     }
   },
-  computed: {}
+  computed: {
+    savedTours() {
+      return this.tours;
+    },
+    filteredTours() {
+      const setFilters = data => {
+        return data.filter(data => {
+          return data.title.toLowerCase().includes(this.search.toLowerCase());
+        });
+      };
+      if (this.showClickedType && this.showClickedType.title) {
+        const type = this.savedTours.filter(data =>
+          data.type.title
+            .toLowerCase()
+            .includes(this.showClickedType.title.toLowerCase())
+        );
+        if (this.showClickedType && this.showClickedType.department) {
+          const department = type.filter(data =>
+            data.type.department
+              .toLowerCase()
+              .includes(this.showClickedType.department.toLowerCase())
+          );
+          if (this.showClickedType && this.showClickedType.classCode) {
+            const classroom = department.filter(data =>
+              data.type.classCode
+                .toLowerCase()
+                .includes(this.showClickedType.classCode.toLowerCase())
+            );
+            if (this.showClickedType && this.showClickedType.term) {
+              const terms = classroom.filter(data =>
+                data.type.term
+                  .toLowerCase()
+                  .includes(this.showClickedType.term.toLowerCase())
+              );
+              return setFilters(terms);
+            }
+            return setFilters(classroom);
+          }
+          return setFilters(department);
+        }
+        return setFilters(type);
+      } else {
+        return setFilters(this.savedTours);
+      }
+    }
+  },
+  mounted() {}
 };
 </script>
 

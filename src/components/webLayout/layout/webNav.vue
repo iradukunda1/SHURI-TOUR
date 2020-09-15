@@ -103,7 +103,7 @@
         v-if="showAboutDropDown"
       >
         <ul class="p-0 m-0">
-          <li
+         <li
             @click="
               closeDropDown(),
                 $router.push({ name: 'About Us', hash: '#who-we-are' })
