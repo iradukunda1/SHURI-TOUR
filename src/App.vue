@@ -10,6 +10,9 @@ export default {
     Array.prototype.firstThree = function() {
       return this.slice(0, 3);
     };
+    Array.prototype.firstSix = function() {
+      return this.slice(0, 6);
+    };
     Array.prototype.firstEight = function() {
       return this.slice(0, 8);
     };

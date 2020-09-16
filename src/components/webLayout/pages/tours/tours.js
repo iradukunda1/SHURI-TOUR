@@ -6,7 +6,7 @@ export default {
       location: "Kigali, Kacyiru",
       experience: "Trigonometric Function and Equations",
       price: "500,000RFW",
-      image: "/img/Authentic-cross-curricular-options.jpg",
+      image: "/img/fablab.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
@@ -25,7 +25,7 @@ export default {
       location: "Kimihurura, Kigali",
       experience: "Trigonometric Function and Equations",
       price: "10,500,000RFW",
-      image: "/img/Authentic-cross-curricular-options.jpg",
+      image: "/img/westwell.jpg",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
@@ -43,7 +43,7 @@ export default {
       location: "Kigali, Remera",
       experience: "Chromosomes and Nuclear acid, DNA Replications",
       price: "10,500,000RFW",
-      image: "/img/Authentic-cross-curricular-options.jpg",
+      image: "/img/lancetlab.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
         "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
@@ -63,7 +63,7 @@ export default {
       experience: "Organic Chemistry",
       price: "1000,000RFW",
       premium: "/img/logos/BEE-LOGO-M_-BLUE_BACKGROUND_RGB.jpg",
-      image: "/img/Innovative-Educational-Activities.jpg",
+      image: "/img/sulfo.jpg",
       description:
         "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
@@ -81,7 +81,7 @@ export default {
       location: "Kicukiro, Kigali / Rwanda",
       experience: "Organic Chemistry",
       price: "1000,000RFW",
-      image: "/img/Authentic-cross-curricular-options.jpg",
+      image: "/img/rotorw.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
@@ -100,7 +100,7 @@ export default {
       location: "Kigali, Kicukiro District",
       experience: "Organic Chemistry",
       price: "1000,000RFW",
-      image: "/img/Authentic-cross-curricular-options.jpg",
+      image: "/img/sonatube.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
@@ -119,7 +119,7 @@ export default {
       location: "Kigali,Gikondo",
       experience: "Organic Chemistry, Alkanes",
       price: "100,000RFW",
-      image: "/img/Authentic-cross-curricular-options.jpg",
+      image: "/img/mironko.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
@@ -139,7 +139,7 @@ export default {
       experience: "Alkanes",
       price: "1000,000RFW",
       premium: "/img/logos/BEE-LOGO-M_-BLUE_BACKGROUND_RGB.jpg",
-      image: "/img/Innovative-Educational-Activities.jpg",
+      image: "/img/baho.jpg",
       description:
         "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
@@ -159,7 +159,7 @@ export default {
         "Map working Interpretation and Bearings, directions, distances areas on map",
       price: "1000,000RFW",
       premium: "/img/logos/BEE-LOGO-M_-BLUE_BACKGROUND_RGB.jpg",
-      image: "/img/Innovative-Educational-Activities.jpg",
+      image: "/img/meteo.jpg",
       description:
         "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
@@ -177,7 +177,7 @@ export default {
       location: "BroadBand system corporation",
       experience: "Introduction to computer sciences",
       price: "500,000RFW",
-      image: "/img/Authentic-cross-curricular-options.jpg",
+      image: "/img/internetCo.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
@@ -196,7 +196,7 @@ export default {
       location: "Kigali Nyarugenge",
       experience: "Measuring national Income",
       price: "500,000RFW",
-      image: "/img/Authentic-cross-curricular-options.jpg",
+      image: "/img/minecofin.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
@@ -215,7 +215,7 @@ export default {
       location: "Kigali Masoro",
       experience: "Light, Oscillation and wave",
       price: "500,000RFW",
-      image: "/img/Authentic-cross-curricular-options.jpg",
+      image: "/img/sahasra.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
@@ -234,7 +234,7 @@ export default {
       location: "Kigali Masoro",
       experience: "Energy change in simple harmonic",
       price: "500,000RFW",
-      image: "/img/Authentic-cross-curricular-options.jpg",
+      image: "/img/meteo.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
@@ -253,7 +253,7 @@ export default {
       location: "Rwamagana",
       experience: "Autotrophic Nutrition and Transport in Plants",
       price: "1000,000RFW",
-      image: "/img/Authentic-cross-curricular-options.jpg",
+      image: "/img/bella.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
@@ -272,7 +272,7 @@ export default {
       location: "Kacyiru, Kigali",
       experience: "Matrices Determination Order Change",
       price: "1000,000RFW",
-      image: "/img/Authentic-cross-curricular-options.jpg",
+      image: "/img/fablab.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
@@ -291,7 +291,7 @@ export default {
       location: "Kimihurura, Kigali",
       experience: "Matrices Determination Order Change",
       price: "1000,000RFW",
-      image: "/img/Authentic-cross-curricular-options.jpg",
+      image: "/img/westwell.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
@@ -310,7 +310,7 @@ export default {
       location: "Kigali, Nyarutarama",
       experience: "Chemical Reaction of Halogen alkanes",
       price: "1000,000RFW",
-      image: "/img/Authentic-cross-curricular-options.jpg",
+      image: "/img/sulfo.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
@@ -348,7 +348,7 @@ export default {
       location: "kigali, Kicukiro",
       experience: "Alcohols and ethers",
       price: "1000,000RFW",
-      image: "/img/Authentic-cross-curricular-options.jpg",
+      image: "/img/bralirwa.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
@@ -367,7 +367,7 @@ export default {
       location: "kigali, Masaka",
       experience: "carboxylic acids and acylhalides",
       price: "1000,000RFW",
-      image: "/img/Authentic-cross-curricular-options.jpg",
+      image: "/img/speranza.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
@@ -387,7 +387,7 @@ export default {
       experience: "weather and Climate Change of world",
       price: "1000,000RFW",
       premium: "/img/logos/BEE-LOGO-M_-BLUE_BACKGROUND_RGB.jpg",
-      image: "/img/Innovative-Educational-Activities.jpg",
+      image: "/img/meteo.jpg",
       description:
         "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
@@ -406,7 +406,7 @@ export default {
       experience:
         "Computer software installation, introduction to computer programming",
       price: "1000,000RFW",
-      image: "/img/Authentic-cross-curricular-options.jpg",
+      image: "/img/software.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
@@ -444,7 +444,7 @@ export default {
       location: "Kigali Masoro",
       experience: "Oscillation and wave",
       price: "1000,000RFW",
-      image: "/img/Authentic-cross-curricular-options.jpg",
+      image: "/img/sahasra.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
@@ -463,7 +463,7 @@ export default {
       location: "Kigali Nyarugenge",
       experience: "Propagation of mechanical waves",
       price: "1000,000RFW",
-      image: "/img/Authentic-cross-curricular-options.jpg",
+      image: "/img/meteo.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
@@ -482,7 +482,7 @@ export default {
       location: "Kigali Nyarugenge",
       experience: "current electricity",
       price: "1000,000RFW",
-      image: "/img/Authentic-cross-curricular-options.jpg",
+      image: "/img/reg.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
@@ -501,7 +501,7 @@ export default {
       location: "Kigali Gasabo",
       experience: "energy power and climate change",
       price: "1000,000RFW",
-      image: "/img/Authentic-cross-curricular-options.jpg",
+      image: "/img/kagugu.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
@@ -521,7 +521,7 @@ export default {
       experience:
         "Computer software installation, introduction to computer programming",
       price: "1000,000RFW",
-      image: "/img/Authentic-cross-curricular-options.jpg",
+      image: "/img/software.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
@@ -540,7 +540,7 @@ export default {
       location: "Kigali Remera",
       experience: "Regulation of Glucose and temperature, Genetics",
       price: "500,000RFW",
-      image: "/img/inyange.jpg",
+      image: "/img/baho.jpg",
       description:
         "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
@@ -576,7 +576,7 @@ export default {
       location: "Rulindo Northern province",
       experience: "Conductivity of Solutions",
       price: "500,000RFW",
-      image: "/img/inyange.jpg",
+      image: "/img/urwibutso.jpg",
       description:
         "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
@@ -594,7 +594,7 @@ export default {
       location: "Kigali Nyarugenge",
       experience: "Electrolysis",
       price: "500,000RFW",
-      image: "/img/inyange.jpg",
+      image: "/img/sulfo.jpg",
       description:
         "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
@@ -614,7 +614,7 @@ export default {
         "Regulation of Glucose and temperature, Immune system vaccination and antibiotics",
       price: "1000,000RFW",
       premium: "/img/logos/BEE-LOGO-M_-BLUE_BACKGROUND_RGB.jpg",
-      image: "/img/Innovative-Educational-Activities.jpg",
+      image: "/img/baho.jpg",
       description:
         "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
@@ -632,7 +632,7 @@ export default {
       location: "Nyamirambo, Kakigali",
       experience: "Object orientated programming of java",
       price: "1000,000RFW",
-      image: "/img/Authentic-cross-curricular-options.jpg",
+      image: "/img/software.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
@@ -651,7 +651,7 @@ export default {
       location: "Kagali, Kacyiru",
       experience: "Labour and wages unemployment",
       price: "1000,000RFW",
-      image: "/img/Authentic-cross-curricular-options.jpg",
+      image: "/img/mifotra.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
@@ -670,7 +670,7 @@ export default {
       location: "Kagali, Nyarugenge",
       experience: "Astrophysics: Earth and Space",
       price: "1000,000RFW",
-      image: "/img/Authentic-cross-curricular-options.jpg",
+      image: "/img/meteo.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
