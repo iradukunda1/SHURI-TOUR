@@ -269,7 +269,7 @@
           <div class="popular-tour-content-body pb-3 w-100">
             <div
               class="popular-tour-lists"
-              v-for="(tour, index) in tours"
+              v-for="(tour, index) in tours.firstSix()"
               :key="index"
             >
               <div class="popular-tour-list card bg-white pb-5">
