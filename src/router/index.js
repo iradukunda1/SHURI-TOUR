@@ -14,7 +14,6 @@ VueRouter.prototype.push = function push(location) {
 };
 
 Vue.use(VueRouter);
-
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
@@ -54,19 +53,21 @@ const router = new VueRouter({
             import("@/components/webLayout/pages/views/healthy-and-safety")
         },
         {
-          path:"/contact-us",
-          name:"Contact Us",
-          component: ()=>import("@/components/webLayout/pages/views/contact-us")
+          path: "/contact-us",
+          name: "Contact Us",
+          component: () =>
+            import("@/components/webLayout/pages/views/contact-us")
         },
         {
-          path:"/privacy-policy",
-          name:"Privacy Policy",
-          component: ()=>import("@/components/webLayout/pages/views/privacy-policy")
+          path: "/privacy-policy",
+          name: "Privacy Policy",
+          component: () =>
+            import("@/components/webLayout/pages/views/privacy-policy")
         },
         {
-          path:"/about-us",
-          name:"About Us",
-          component: ()=>import("@/components/webLayout/pages/views/about-us")
+          path: "/about-us",
+          name: "About Us",
+          component: () => import("@/components/webLayout/pages/views/about-us")
         }
       ]
     },
@@ -77,19 +78,17 @@ const router = new VueRouter({
     }
   ],
   scrollBehavior(to, from, savedPosition) {
-    if ("scrollRestoration" in history) {
-      history.scrollRestoration = "manual";
-    }
-    let position = { x: 0, y: 0 };
     if (savedPosition) {
-      position = savedPosition;
+      return savedPosition;
+    } else {
+      if (!to.hash) {
+        return { x: 0, y: 0 };
+      } else {
+        return {
+          selector: to.hash
+        };
+      }
     }
-
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve(position);
-      }, 1000);
-    });
   }
 });
 router.beforeResolve((to, from, next) => {

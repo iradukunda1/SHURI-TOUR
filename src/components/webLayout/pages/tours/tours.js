@@ -9,7 +9,7 @@ export default {
       image: "/img/fablab.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -27,7 +27,7 @@ export default {
       price: "10,500,000RFW",
       image: "/img/westwell.jpg",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -46,7 +46,7 @@ export default {
       image: "/img/lancetlab.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -65,7 +65,7 @@ export default {
       premium: "/img/logos/BEE-LOGO-M_-BLUE_BACKGROUND_RGB.jpg",
       image: "/img/sulfo.jpg",
       description:
-        "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 10,
       type: {
@@ -84,7 +84,7 @@ export default {
       image: "/img/rotorw.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -103,7 +103,7 @@ export default {
       image: "/img/sonatube.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -122,7 +122,7 @@ export default {
       image: "/img/mironko.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -141,7 +141,7 @@ export default {
       premium: "/img/logos/BEE-LOGO-M_-BLUE_BACKGROUND_RGB.jpg",
       image: "/img/baho.jpg",
       description:
-        "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 10,
       type: {
@@ -161,7 +161,7 @@ export default {
       premium: "/img/logos/BEE-LOGO-M_-BLUE_BACKGROUND_RGB.jpg",
       image: "/img/meteo.jpg",
       description:
-        "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 10,
       type: {
@@ -180,7 +180,7 @@ export default {
       image: "/img/internetCo.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -199,7 +199,7 @@ export default {
       image: "/img/minecofin.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -218,7 +218,7 @@ export default {
       image: "/img/sahasra.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -237,7 +237,7 @@ export default {
       image: "/img/meteo.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -256,7 +256,7 @@ export default {
       image: "/img/bella.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -275,7 +275,7 @@ export default {
       image: "/img/fablab.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -294,7 +294,7 @@ export default {
       image: "/img/westwell.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -302,6 +302,44 @@ export default {
         department: "MCE,MCB,PCM,MEG,MPC,MPG",
         classCode: "S05",
         term: "2ND TERM"
+      }
+    },
+    {
+      id: "kljiosd-kjdsi-i78097yujd-jkdsihuplw",
+      title: "FabLab Rwanda",
+      location: "Kacyiru, Kigali",
+      experience: "Points,Straight Lines and Sphere 3D",
+      price: "1000,000RFW",
+      image: "/img/fablab.jpg",
+      premium: "/img/logos/shuri-book-logo.png",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "MCE,MCB,PCM,MEG,MPC,MPG",
+        classCode: "S05,S06",
+        term: "3RD TERM"
+      }
+    },
+    {
+      id: "mdnskjnks-jhdkujkhj-78ejkhifd-kjdfi89",
+      title: "Westwell Maker Space",
+      location: "Kimihurura, Kigali",
+      experience: "Points,Straight Lines and Sphere 3D",
+      price: "1000,000RFW",
+      image: "/img/westwell.jpg",
+      premium: "/img/logos/shuri-book-logo.png",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "MCE,MCB,PCM,MEG,MPC,MPG",
+        classCode: "S05,S06",
+        term: "3RD TERM"
       }
     },
     {
@@ -313,7 +351,7 @@ export default {
       image: "/img/sulfo.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -332,7 +370,7 @@ export default {
       image: "/img/inyange.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -351,7 +389,7 @@ export default {
       image: "/img/bralirwa.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -370,7 +408,7 @@ export default {
       image: "/img/speranza.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -389,7 +427,7 @@ export default {
       premium: "/img/logos/BEE-LOGO-M_-BLUE_BACKGROUND_RGB.jpg",
       image: "/img/meteo.jpg",
       description:
-        "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 10,
       type: {
@@ -409,7 +447,7 @@ export default {
       image: "/img/software.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -428,7 +466,7 @@ export default {
       image: "/img/Authentic-cross-curricular-options.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -447,7 +485,7 @@ export default {
       image: "/img/sahasra.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -466,7 +504,7 @@ export default {
       image: "/img/meteo.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -485,7 +523,7 @@ export default {
       image: "/img/reg.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -504,7 +542,7 @@ export default {
       image: "/img/kagugu.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -524,7 +562,7 @@ export default {
       image: "/img/software.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -542,7 +580,7 @@ export default {
       price: "500,000RFW",
       image: "/img/baho.jpg",
       description:
-        "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 12,
       type: {
@@ -560,7 +598,7 @@ export default {
       price: "500,000RFW",
       image: "/img/inyange.jpg",
       description:
-        "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 12,
       type: {
@@ -578,7 +616,7 @@ export default {
       price: "500,000RFW",
       image: "/img/urwibutso.jpg",
       description:
-        "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 12,
       type: {
@@ -596,7 +634,7 @@ export default {
       price: "500,000RFW",
       image: "/img/sulfo.jpg",
       description:
-        "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 12,
       type: {
@@ -616,7 +654,7 @@ export default {
       premium: "/img/logos/BEE-LOGO-M_-BLUE_BACKGROUND_RGB.jpg",
       image: "/img/baho.jpg",
       description:
-        "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 10,
       type: {
@@ -635,7 +673,7 @@ export default {
       image: "/img/software.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -654,7 +692,7 @@ export default {
       image: "/img/mifotra.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -673,7 +711,628 @@ export default {
       image: "/img/meteo.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for Japanese Language, History, Geography, and Visual Arts",
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "MPC,MPG,PCB,PCM",
+        classCode: "S05,S06",
+        term: "3RD TERM"
+      }
+    },
+    {
+      id: "678-mnxbv-kdlsjol-jkdshbhgsabj-jknhsj-lw",
+      title: "Baho International Hospital",
+      location: "Kagali, Nyarutaram",
+      experience: "The circulatory system",
+      price: "1000,000RFW",
+      image: "/img/baho.jpg",
+      premium: "/img/logos/shuri-book-logo.png",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "BCG,MCB,PCB",
+        classCode: "S06",
+        term: "1ST TERM"
+      }
+    },
+    {
+      id: "uiyiuwe-fdgfd-kdsjkjsda-kjhuyyoi-klj;p'lw",
+      title: "Sonatube",
+      location: "Kigali, Kicukiro District",
+      experience: "Properties and uses of transition metals",
+      price: "1000,000RFW",
+      image: "/img/sonatube.jpg",
+      premium: "/img/logos/shuri-book-logo.png",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "BCG,PCB,PCM,MCB",
+        classCode: "S06",
+        term: "1ST TERM"
+      }
+    },
+    {
+      id: "uiyiuwe-fdgfd-kdsjkjsda-djcjjg-ggrsf",
+      title: "Master Steel",
+      location: "Kigali,Gahanga",
+      experience: "Properties and uses of transition metals",
+      price: "1000,000RFW",
+      image: "/img/master-stell.jpg",
+      premium: "/img/logos/shuri-book-logo.png",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "BCG,PCB,PCM,MCB",
+        classCode: "S06",
+        term: "1ST TERM"
+      }
+    },
+    {
+      id: "kjndjs-fdgfd-dsjkjknd-kjdfodjcjjg-ggrsf",
+      title: "Enas",
+      location: "Kigali,Nyadungu",
+      experience: "Extraction of Metals",
+      price: "1000,000RFW",
+      image: "/img/enas.jpg",
+      premium: "/img/logos/shuri-book-logo.png",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "BCG,PCB,PCM,MCB",
+        classCode: "S06",
+        term: "1ST TERM"
+      }
+    },
+    {
+      id: "kjndjs-kjmdf-jkfdnkj-jcjjg-ggrsf",
+      title: "Rwanda Plastic Industry",
+      location: "Kigali,Kicukiro",
+      experience: "NPK as components of fertilizers benzene",
+      price: "1000,000RFW",
+      image: "/img/plastic-rw.jpg",
+      premium: "/img/logos/shuri-book-logo.png",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "BCG,PCB,PCM,MCB",
+        classCode: "S06",
+        term: "1ST TERM"
+      }
+    },
+    {
+      id: "lkjfsio-kjnfdk-kjndfikhner-klfjdjhdup'lw",
+      title: "FabLab Rwanda",
+      location: "Kigali, Kacyiru",
+      experience: "External Land form Processes and related features",
+      price: "500,000RFW",
+      image: "/img/fablab.jpg",
+      premium: "/img/logos/shuri-book-logo.png",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "BCG,MEG,MPG",
+        classCode: "S06",
+        term: "1ST TERM"
+      }
+    },
+    {
+      id: "jdsnkjds-fskjhdfk-okkifg-jbhjdsfd",
+      title: "Westwell Maker Space",
+      location: "Kigali,Kimihurura",
+      experience: "External Land form Processes and related features",
+      price: "10,500,000RFW",
+      image: "/img/westwell.jpg",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "BCG,MEG,MPG",
+        classCode: "S06",
+        term: "1ST TERM"
+      }
+    },
+    {
+      id: "lkjfsio-jknkdskjn-dfikhner-klfjdjhdup'lw",
+      title: "FabLab Rwanda",
+      location: "Kigali, Kacyiru",
+      experience: "Complex Numbers and equations",
+      price: "500,000RFW",
+      image: "/img/fablab.jpg",
+      premium: "/img/logos/shuri-book-logo.png",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "MCB,MCE,MEG,MPC,MPG,PCM",
+        classCode: "S06",
+        term: "1ST TERM"
+      }
+    },
+    {
+      id: "jdsnkjds-kjndfj-hjbjdf-okkifg-jbhjdsfd",
+      title: "Westwell Maker Space",
+      location: "Kigali,Kimihurura",
+      experience: "Complex Numbers and equations",
+      price: "10,500,000RFW",
+      image: "/img/westwell.jpg",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "MCB,MCE,MEG,MPC,MPG,PCM",
+        classCode: "S06",
+        term: "1ST TERM"
+      }
+    },
+    {
+      id: "jdsnkjds-kjmngfkj-kjnjhgkfg-jbhjdsfd",
+      title: "Broadband system corpration",
+      location: "Kigali,Remera",
+      experience:
+        "Computer security LAN architecture, network protocols and models",
+      price: "10,500,000RFW",
+      image: "/img/internetCo.jpg",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "MCE,MPC",
+        classCode: "S06",
+        term: "1ST TERM"
+      }
+    },
+    {
+      id: "jdsnkjds-jkhjsd-jhbjhd-jbhjdsfd",
+      title: "Axion Network Industry",
+      location: "Kigali,Gishushu",
+      experience:
+        "Computer security LAN architecture, network protocols and models",
+      price: "10,500,000RFW",
+      image: "/img/axiom.png",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "MCE,MPC",
+        classCode: "S06",
+        term: "1ST TERM"
+      }
+    },
+    {
+      id: "hjbjfd-jknkfjd-jkhjsd-jhbjhd-jbhjdsfd",
+      title: "Ministry of Trade and Industry",
+      location: "Kigali,Kimihurura",
+      experience: "International trade, free trade and trade protectionism",
+      price: "10,500,000RFW",
+      image: "/img/trade.jpg",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "MCE,MEG",
+        classCode: "S06",
+        term: "1ST TERM"
+      }
+    },
+    {
+      id: "hjbjde-njbjd-dslkjiui9-jhdskj-jknkjdflw",
+      title: "Sahasra",
+      location: "Kigali Masoro",
+      experience: "Oscillation and wave",
+      price: "500,000RFW",
+      image: "/img/sahasra.jpg",
+      premium: "/img/logos/shuri-book-logo.png",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "MPC,MPG,PCB,PCM",
+        classCode: "S06",
+        term: "1ST TERM"
+      }
+    },
+    {
+      id: "fdfew34r-dslkjiui9-ssmndksi;p'lw",
+      title: "Meteo Rwanda",
+      location: "Kigali Nyarugenge",
+      experience: "Energy changes in simple harmonic",
+      price: "500,000RFW",
+      image: "/img/meteo.jpg",
+      premium: "/img/logos/shuri-book-logo.png",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "MPC,MPG,PCB,PCM",
+        classCode: "S06",
+        term: "1ST TERM"
+      }
+    },
+    {
+      id: "fdfew34r-kllgm-poijuhdk-ssmndksijkng-0jkhbjhlw",
+      title: "Inyange Industry",
+      location: "Kigali Masoro",
+      experience: "Agricultural physics",
+      price: "500,000RFW",
+      image: "/img/inyange.jpg",
+      premium: "/img/logos/shuri-book-logo.png",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "MPC,MPG,PCB,PCM",
+        classCode: "S06",
+        term: "1ST TERM"
+      }
+    },
+    {
+      id: "65748hjbgyu-uiyik8956-98ou5jjol-jkdshbhgsabj-jknhsj-lw",
+      title: "Baho International Hospital",
+      location: "Kagali, Nyarutaram",
+      experience: "Cellural respiration",
+      price: "1000,000RFW",
+      image: "/img/baho.jpg",
+      premium: "/img/logos/shuri-book-logo.png",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "BCG,MCB,PCB",
+        classCode: "S06",
+        term: "2ND TERM"
+      }
+    },
+    {
+      id: "nmfgdk98id-iuj98oikhf-pslklisal-p096lw",
+      title: "Sulfo Rwanda",
+      location: "Kigali, Nyarutarama",
+      experience: "PH of acidic and alkaline solutions",
+      price: "1000,000RFW",
+      image: "/img/sulfo.jpg",
+      premium: "/img/logos/shuri-book-logo.png",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "BCG,PCB,PCM,MCB",
+        classCode: "S06",
+        term: "2ND TERM"
+      }
+    },
+    {
+      id: "dsmnbjks-jbhjgf-kjnmjkgh-kljskds;p'lw",
+      title: "Inyange Industry",
+      location: "Kigali, Masaka",
+      experience: "PH of acidic and alkaline solutions",
+      price: "1000,000RFW",
+      image: "/img/inyange.jpg",
+      premium: "/img/logos/shuri-book-logo.png",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "BCG,PCB,PCM,MCB",
+        classCode: "S06",
+        term: "2ND TERM"
+      }
+    },
+    {
+      id: "sajkdjks-dffgd8943u-jkskdsdfsgv;p'lw",
+      title: "Bralirwa Industry",
+      location: "kigali, Kicukiro",
+      experience: "Quantintive chemical equilibrium",
+      price: "1000,000RFW",
+      image: "/img/bralirwa.jpg",
+      premium: "/img/logos/shuri-book-logo.png",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "BCG,PCB,PCM,MCB",
+        classCode: "S06",
+        term: "2ND TERM"
+      }
+    },
+    {
+      id: "mjhjbjasj-jkhuihg-kjnfg-nmkjdsngh-aanbhj-nmbkplw",
+      title: "Speranza LTD",
+      location: "kigali, Masaka",
+      experience: "Quantintive chemical equilibrium",
+      price: "1000,000RFW",
+      image: "/img/speranza.jpg",
+      premium: "/img/logos/shuri-book-logo.png",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "BCG,PCB,PCM,MCB",
+        classCode: "S06",
+        term: "2ND TERM"
+      }
+    },
+    {
+      id: "lkjfsio-kjgolkj-ljkk-6676fikhner-klfjdjhdup",
+      title: "Rwanda Environment Management Authority (REMA)",
+      location: "Kigali, Kacyiru",
+      experience: "Global Drainage system, Climate change in the World",
+      price: "500,000RFW",
+      image: "/img/rema.jpg",
+      premium: "/img/logos/shuri-book-logo.png",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "BCG,MEG,MPG",
+        classCode: "S06",
+        term: "2ND TERM"
+      }
+    },
+    {
+      id: "lkjfsio-bjkgf-lkjhgner-klfjdjhdup'lw",
+      title: "FabLab Rwanda",
+      location: "Kigali, Kacyiru",
+      experience: "Matrix and determination of order",
+      price: "500,000RFW",
+      image: "/img/fablab.jpg",
+      premium: "/img/logos/shuri-book-logo.png",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "MCB,MCE,MEG,MPC,MPG,PCM",
+        classCode: "S06",
+        term: "2ND TERM"
+      }
+    },
+    {
+      id: "jdsnkjds-jkngf859-opkoijbjdf-okkifg-jbhjdsfd",
+      title: "Westwell Maker Space",
+      location: "Kigali,Kimihurura",
+      experience: "Matrix and determination of order",
+      price: "10,500,000RFW",
+      image: "/img/westwell.jpg",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "MCB,MCE,MEG,MPC,MPG,PCM",
+        classCode: "S06",
+        term: "2ND TERM"
+      }
+    },
+    {
+      id: "hjbjfd-78uyjh-uii89-bhjdsfd",
+      title: "Ministry of Finance and Economic Planning",
+      location: "Kigali,Nyarugenge",
+      experience:
+        "Economic Intergration on the development of economy, globalisation, Economic Growth Economic Development Under Order",
+      price: "10,500,000RFW",
+      image: "/img/minecofin.jpg",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "MCE,MEG",
+        classCode: "S06",
+        term: "2ND TERM"
+      }
+    },
+    {
+      id: "hjbjfd-jhe67oiuei-uii89-jmmhjd6787",
+      title: "Rwanda Utilities Regulatory Agency",
+      location: "Kigali,Nyarugenge",
+      experience: "Digital analogy and Digital signals",
+      price: "10,500,000RFW",
+      image: "/img/rura.jpg",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "MPC,MPG,PCB,PCM",
+        classCode: "S06",
+        term: "2ND TERM"
+      }
+    },
+    {
+      id: "hjbjfd-nfdkjjhd-uidhfiuk-uii89-jmmhjd6787",
+      title: "Meteo Rwanda",
+      location: "Kigali,Nyarugenge",
+      experience: "Digital analogy and Digital signals",
+      price: "10,500,000RFW",
+      image: "/img/meteo.jpg",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "MPC,MPG,PCB,PCM",
+        classCode: "S06",
+        term: "2ND TERM"
+      }
+    },
+    {
+      id: "hjbjfd-kijdoi-uidhfiuk-uii89-jhsj90",
+      title: "Rwanda Energy Group",
+      location: "Kigali,Nyarugenge",
+      experience: "Digital analogy and Digital signals",
+      price: "10,500,000RFW",
+      image: "/img/reg.jpg",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "MPC,MPG,PCB,PCM",
+        classCode: "S06",
+        term: "2ND TERM"
+      }
+    },
+    {
+      id: "678-iufdhuj-kdlsjol-siuyagtryu;p'lw",
+      title: "Meteo Rwanda",
+      location: "Kagali, Nyarugenge",
+      experience: "Human Reproduction, Principal of Gene Technology",
+      price: "1000,000RFW",
+      image: "/img/meteo.jpg",
+      premium: "/img/logos/shuri-book-logo.png",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "BCG,MCB,PCB",
+        classCode: "S05",
+        term: "3RD TERM"
+      }
+    },
+    {
+      id: "678-iufdhuj-kdlsjol-jhesio90-uihjjisw",
+      title: "Mara Phone",
+      location: "Kagali, Masoro",
+      experience: "ElectroChemical Cell and Applications",
+      price: "1000,000RFW",
+      image: "/img/mara.jpg",
+      premium: "/img/logos/shuri-book-logo.png",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "BCG,MCB,PCB",
+        classCode: "S05",
+        term: "3RD TERM"
+      }
+    },
+    {
+      id: "678iui9-kdlsjol-jhesio90-uihjjisw",
+      title: "Positivo",
+      location: "Kagali, Masoro",
+      experience: "ElectroChemical Cell and Applications",
+      price: "1000,000RFW",
+      image: "/img/positivo.jpg",
+      premium: "/img/logos/shuri-book-logo.png",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "BCG,MCB,PCB",
+        classCode: "S05",
+        term: "3RD TERM"
+      }
+    },
+    {
+      id: "678iui9-kdlsjol-jjisw-jmmnhkjds7",
+      title: "Rwanda Development Board (RDB)",
+      location: "Kagali, Gishushu",
+      experience:
+        "Industrialization in the world, Trade and Commerce in the world, Environment consarvation and trourism",
+      price: "1000,000RFW",
+      image: "/img/rdb.jpg",
+      premium: "/img/logos/shuri-book-logo.png",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "BCG,MCB,PCB",
+        classCode: "S05",
+        term: "3RD TERM"
+      }
+    },
+    {
+      id: "hjbjfd-jkjikls-jdhoipek-jhbjhd-jbhjdsfd",
+      title: "Ministry of Trade and Industry",
+      location: "Kigali,Kimihurura",
+      experience:
+        "Economic Intergration on the development of economy, Globalisation",
+      price: "10,500,000RFW",
+      image: "/img/trade.jpg",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+      time_interval: "28/03/2018 - 28/03/2048",
+      days: 1,
+      type: {
+        title: "sciences",
+        department: "MCE,MEG",
+        classCode: "S06",
+        term: "3RD TERM"
+      }
+    },
+    {
+      id: "678-jkdshuikiu-iufdhuj-kdlsjol-mjkhieskuj-8979oiwejlw",
+      title: "Meteo Rwanda",
+      location: "Kagali, Nyarugenge",
+      experience: "Astrophysics: Earth and Space",
+      price: "1000,000RFW",
+      image: "/img/meteo.jpg",
+      premium: "/img/logos/shuri-book-logo.png",
+      description:
+        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
