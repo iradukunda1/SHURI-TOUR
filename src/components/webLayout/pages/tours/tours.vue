@@ -203,7 +203,7 @@
           </div>
           <ul
             class="page-numbers list-unstyled row mx-0"
-            v-if="filteredTours && filteredTours.length > 40"
+            v-if="filteredTours && filteredTours.length > 100"
           >
             <li class="active">1</li>
             <li>2</li>
@@ -666,7 +666,10 @@ export default {
     filteredTours() {
       const setFilters = data => {
         return data.filter(data => {
-          return data.title.toLowerCase().includes(this.search.toLowerCase());
+          return (
+            data.title.toLowerCase().includes(this.search.toLowerCase()) ||
+            data.experience.toLowerCase().includes(this.search.toLowerCase())
+          );
         });
       };
       if (this.showClickedType && this.showClickedType.title) {

@@ -6,6 +6,12 @@ export default {
 
   setResources(state, data) {
     if (data[1]) state.resources[data[0]] = data[1];
+    else if (data[1] && data[0] == "page_title") {
+      localStorage.setItem(
+        "page_title",
+        JSON.stringify(state.resources.data[1])
+      );
+    }
   },
 
   view(state, data) {

@@ -8,6 +8,7 @@
       <div class="tour-card-container mb-4 pb-2 row mx-0 w-100">
         <div class="tour-image col-sm-5 col-md-4 d-flex px-0">
           <img
+            class="cursor-pointer"
             :src="tour.image"
             alt=""
             @mouseover="(viewImage = !viewImage), (diffIndex = index)"
@@ -45,7 +46,7 @@
           </div>
           <div class="row w-100 mx-0 ">
             <p class="fa-13 text-black-50 col-md-8 pt-2 px-0">
-              {{ tour.description }}
+              Experience: {{ tour.experience }}
             </p>
             <div class="col-md-4">
               <div
@@ -85,14 +86,14 @@ export default {
           height: 160px;
           width: 100%;
           &:hover {
-            animation: zoomOut 0.3s ease;
+            //animation: zoomOut .3s ease;
             overflow-x: hidden;
           }
         }
         .zoomer-bg {
           height: 160px;
           width: 100%;
-          transition: transform 0.5s ease;
+          transition: transform 0.6s ease;
           transform: rotate(180deg);
           background: rgba(29, 29, 212, 0.61);
         }

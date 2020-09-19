@@ -51,7 +51,7 @@ html {
   margin: 0 !important;
   box-sizing: border-box;
 }
-body {
+body{
   overflow-x: hidden;
 }
 .web-layout-content {
@@ -65,10 +65,9 @@ body {
     "navbar"
     "content"
     "footer";
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: visible;
   font-family: "Roboto", sans-serif;
-  position: fixed;
+  position: absolute;
 
   .web-nav-layout {
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
@@ -91,6 +90,12 @@ body {
   }
   .bg-button {
     background: rgb(0, 124, 173);
+  }
+}
+@media screen and  (max-width: 790px) {
+  .web-layout-content {
+    overflow-x: hidden;
+    position: fixed;
   }
 }
 </style>
