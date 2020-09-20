@@ -7,7 +7,7 @@
       <!--      <div class="progressive-bar">-->
       <!--        <div id="progress_bar" class="progressBar"></div>-->
       <!--      </div>-->
-      <div class="slider-content position-relative w-100 h-100">
+      <div class="slider-content d-inline-flex position-relative w-100 h-100">
         <div class="slide current">
           <img class="first-slide-image w-100 h-100" src="/img/plane.jpg" />
           <div class="air-craft-content w-100 mt-5">
@@ -18,15 +18,14 @@
               OUR FOCUS IS ON QUALITY EDUCATIONAL CONTENT
             </p>
             <p>
-              EDUCATION PARTNERS EXCLUSIVE TO TETC IN SPAIN, ITALY, FRANCE &
-              NOUMEA
+              EDUCATION PARTNERS EXCLUSIVE TO SHURI
             </p>
             <p>
-              AUSTRALIAN CURRICULUM-CENTRIC PROGRAMS DEVELOPED WITH OUR
-              EXCLUSIVE PARTNERS
+              RWANDA CURRICULUM-CENTRIC PROGRAMS DEVELOPED WITH OUR EXCLUSIVE
+              PARTNERS
             </p>
             <p>
-              PROGRAMS DEVELOPED UNDER SUPERVISION OF TETC CURRICULUM &
+              PROGRAMS DEVELOPED UNDER SUPERVISION OF SHURI TOUR CURRICULUM &
               EDUCATION ADVISOR
             </p>
             <p>
@@ -40,10 +39,6 @@
             </p>
             <p>
               NON-LANGUAGE STUDENTS’ LESSONS CONDUCTED IN ENGLISH
-            </p>
-            <p>
-              FRENCH, ITALIAN, SPANISH, LATIN, HISTORY, GEOGRAPHY, STUDIES OF
-              RELIGION
             </p>
           </div>
         </div>
@@ -60,6 +55,8 @@
             <p
               class="authentic-curricular-button mx-auto"
               @click="requestTour()"
+              @mouseover="auto = false"
+              @mouseleave="auto = true"
             >
               Request a Tour Proposal
             </p>
@@ -78,6 +75,8 @@
             <p
               class="calibre-education-button mx-auto cursor-pointer"
               @click="requestTour()"
+              @mouseover="auto = false"
+              @mouseleave="auto = true"
             >
               Request a Tour Proposal
             </p>
@@ -109,13 +108,15 @@
             <p
               class="students-benefits-button mx-auto cursor-pointer"
               @click="requestTour()"
+              @mouseover="auto = false"
+              @mouseleave="auto = true"
             >
               Request a Tour Proposal
             </p>
           </div>
         </div>
       </div>
-      <div class="slider-option d-inline-flex justify-content-between w-100">
+      <div class="slider-option d-flex justify-content-between w-100">
         <button id="prev" @click="preView()">
           <i class="fas fa-arrow-left fa-13"></i>
         </button>
@@ -147,22 +148,12 @@
                   <label>Subject</label>
                   <div class="selector position-relative">
                     <select class="w-100 tour-type-select cursor-pointer">
-                      <option value="">Tour Type</option>
-                      <option value="22">Arts &amp; Music</option>
-                      <option value="90">Cross Curricular</option>
-                      <option value="19"
-                        >Humanities &amp; Social Sciences</option
-                      >
-                      <option value="21">Languages</option>
-                      <option value="74">Biology</option>
-                      <option value="23">Chemistry</option>
-                      <option value="093">Geography</option>
-                      <option value="93">Mathematics</option>
-                      <option value="05">Computer</option>
-                      <option value="67">Economics</option>
-                      <option value="45">Physics</option>
+                      <option value="all" selected>All</option>
+                      <option value="sciences">Sciences</option>
+                      <option value="humanities">Humanities</option>
+                      <option value="languages">Languages</option>
                     </select>
-                    <span class="custom-select full-width">Tour Type</span>
+                    <span class="custom-select">Tour Type</span>
                   </div>
                   <div class="form-group col-sm-6 col-md-2"></div>
                 </div>
@@ -326,7 +317,7 @@ export default {
     return {
       viewImage: false,
       diffIndex: null,
-      intervalTime: 9000,
+      intervalTime: 15000,
       auto: true,
       silderInterval: "",
       bar: {
@@ -359,18 +350,20 @@ export default {
       }
     },
     nextView() {
-      const slide = document.querySelectorAll(".slide");
-      const current = document.querySelector(".current");
-      if (current) {
-        current.classList.remove("current");
-        if (current.nextElementSibling) {
-          current.nextElementSibling.classList.add("current");
-        } else {
-          slide[0].classList.add("current");
+      if (this.$route.name === "Home") {
+        const slide = document.querySelectorAll(".slide");
+        const current = document.querySelector(".current");
+        if (current) {
+          current.classList.remove("current");
+          if (current.nextElementSibling) {
+            current.nextElementSibling.classList.add("current");
+          } else {
+            slide[0].classList.add("current");
+          }
         }
+        this.resetInterval();
+        setTimeout(() => current.classList.remove("current"));
       }
-      this.resetInterval();
-      setTimeout(() => current.classList.remove("current"));
     },
     async preView() {
       const slide = await document.querySelectorAll(".slide");
@@ -410,7 +403,7 @@ export default {
       }
     }
   },
-  mounted() {
+  created() {
     this.autoSlide();
   }
 };
@@ -679,6 +672,7 @@ export default {
         }
       }
       .current {
+        z-index: 9999;
         opacity: 1;
         &:nth-child(1) {
           .first-slide-image {
@@ -710,8 +704,8 @@ export default {
               opacity: 1;
             }
             .authentic-curricular-button {
+              transition: all 0.8s ease 1.5s;
               transform: translateY(0px);
-              transition: all 0.3s ease 3.5s;
               opacity: 1;
             }
           }
@@ -729,7 +723,7 @@ export default {
             }
             .calibre-education-button {
               transform: translateY(0px);
-              transition: all 0.3s ease 3s;
+              transition: all 0.8s ease 1.5s;
               opacity: 1;
             }
           }
@@ -765,7 +759,7 @@ export default {
             }
             .students-benefits-button {
               transform: translateY(0px);
-              transition: all 0.3s ease 3s;
+              transition: all 0.8s ease 1.5s;
               opacity: 1;
             }
           }
@@ -774,6 +768,7 @@ export default {
     }
     .slider-option {
       position: absolute;
+      z-index: 9999;
       top: 50%;
       button {
         border: 1px solid darkblue;
