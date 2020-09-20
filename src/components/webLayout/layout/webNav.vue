@@ -10,6 +10,7 @@
           :style="{
             backgroundImage: 'url(' + '/img/logos/shuri-tour.png' + ')'
           }"
+          @click="$router.push({ name: 'Home' })"
         ></span>
       </p>
       <div class="platform-link d-flex my-auto mr-5">
@@ -48,50 +49,56 @@
       class="links-container m-auto"
       :class="{ 'links-container-slider': toggleMobileSideBar }"
     >
-      <ul class="nav-links d-flex mx-auto">
+      <ul
+        class="nav-links d-flex mx-auto"
+        @mouseover="showAboutDropDown = false"
+      >
         <li
           :class="{ 'active-link': $route.name == 'Home' }"
-          @click="$router.push({ name: 'Home' })"
+          @click="$router.push({ name: 'Home' }), closeSide()"
         >
           HOME
         </li>
         <li
           :class="{ 'active-link': $route.name == 'Tours' }"
-          @click="$router.push({ name: 'Tours' })"
+          @click="$router.push({ name: 'Tours' }), closeSide()"
         >
           TOURS
         </li>
-        <li>PARTNERS</li>
-        <li>TEACHERS</li>
+        <!--        <li>PARTNERS</li>-->
+        <!--        <li>TEACHERS</li>-->
         <li
-          @mouseover="showAboutDropDown = false"
           :class="{ 'active-link': $route.name == 'Healthy & Safety' }"
           @click="
             $router.push({ name: 'Healthy & Safety' }),
               $store.dispatch('setResources', [
                 'page_title',
                 'Healthy & Safety'
-              ])
+              ]),
+              closeSide()
           "
         >
           HEALTH & SAFETY
         </li>
         <li
-          @mouseover="showAboutDropDown = !showAboutDropDown"
+          @mouseover.stop="showAboutDropDown = !showAboutDropDown"
           :class="{
             'active-link': showAboutDropDown || $route.name == 'About Us'
           }"
-          @click="closeDropDown(),
-                $router.push({ name: 'About Us', hash: '#who-we-are' })"
+          @click="
+            closeDropDown(),
+              closeSide(),
+              $router.push({ name: 'About Us', hash: '#who-we-are' })
+          "
         >
           ABOUT US
         </li>
         <li
-          @mouseover="showAboutDropDown = false"
           :class="{ 'active-link': $route.name == 'Contact Us' }"
           @click="
             $router.push({ name: 'Contact Us' }),
-              $store.dispatch('setResources', ['page_title', 'contact us'])
+              $store.dispatch('setResources', ['page_title', 'contact us']),
+              closeSide()
           "
         >
           CONTACT US
@@ -103,9 +110,10 @@
         v-if="showAboutDropDown"
       >
         <ul class="p-0 m-0">
-         <li
+          <li
             @click="
               closeDropDown(),
+                closeSide(),
                 $router.push({ name: 'About Us', hash: '#who-we-are' })
             "
           >
@@ -113,8 +121,8 @@
           </li>
           <li
             @click="
-              closeDropDown(),
-                $router.push({ name: 'About Us', hash: '#why-us' })
+              closeDropDown(), closeSide();
+              $router.push({ name: 'About Us', hash: '#why-us' });
             "
           >
             Why us?
@@ -122,6 +130,7 @@
           <li
             @click="
               closeDropDown(),
+                closeSide(),
                 $router.push({ name: 'About Us', hash: '#the-price-we-quote' })
             "
           >
@@ -130,6 +139,7 @@
           <li
             @click="
               closeDropDown(),
+                closeSide(),
                 $router.push({ name: 'About Us', hash: '#financial-security' })
             "
           >
@@ -153,9 +163,12 @@ export default {
     };
   },
   methods: {
+    closeSide() {
+      this.toggleMobileSideBar = false;
+    },
     closeDropDown() {
       this.showAboutDropDown = !this.showAboutDropDown;
-      this.$store.dispatch('setResources', ['page_title', 'about us'])
+      this.$store.dispatch("setResources", ["page_title", "about us"]);
     },
     toggleSideBar() {
       const navLinks = document.querySelectorAll(
@@ -277,8 +290,8 @@ export default {
     }
     .about-us-dropDown {
       position: absolute;
-      z-index: 1;
-      right: 21.4%;
+      z-index: 999999;
+      right: 28.4%;
       top: 21%;
       width: 180px;
       padding: 0;
@@ -328,7 +341,7 @@ export default {
     .links-container {
       height: calc(100vh - 106px);
       background-color: rgb(0, 85, 255);
-      width: 43%;
+      width: 100%;
       position: absolute;
       right: 0;
       transform: translateX(100%);

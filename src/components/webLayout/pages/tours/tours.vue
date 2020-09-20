@@ -668,6 +668,7 @@ export default {
         return data.filter(data => {
           return (
             data.title.toLowerCase().includes(this.search.toLowerCase()) ||
+            data.location.toLowerCase().includes(this.search.toLowerCase()) ||
             data.experience.toLowerCase().includes(this.search.toLowerCase())
           );
         });
