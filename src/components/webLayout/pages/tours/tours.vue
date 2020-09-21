@@ -663,6 +663,9 @@ export default {
     savedTours() {
       return this.tours;
     },
+    selectedTitle() {
+      return this.$store.getters.resources.tour_type;
+    },
     filteredTours() {
       const setFilters = data => {
         return data.filter(data => {
@@ -709,7 +712,17 @@ export default {
       }
     }
   },
-  mounted() {}
+  mounted() {
+    if (this.selectedTitle !== "Tour Type") {
+      this.showTourTypeLists = true;
+      if (this.selectedTitle == "All") return false;
+      this.showClickedType.title = this.selectedTitle;
+      this.filteredDepartment(this.selectedTitle);
+    }
+  },
+  destroyed() {
+    this.$store.dispatch("setResources", ["tour_type", "Tour Type"]);
+  }
 };
 </script>
 

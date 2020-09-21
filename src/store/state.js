@@ -1,8 +1,9 @@
 export default {
   resources: {
-    tour:{},
+    tour: {},
     trigger: {},
-    page_title: null
+    page_title: null,
+    tour_type: "Tour Type"
   },
   accessories: {
     view: null,
