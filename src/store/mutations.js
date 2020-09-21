@@ -1,5 +1,6 @@
 // import { encryptUser } from "../components/shared/service/authService";
 // import jwt_decoder from "jwt-decode";
+/* eslint-disable */
 
 export default {
   /*------------------resources handler----------------*/

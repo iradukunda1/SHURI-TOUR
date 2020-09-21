@@ -147,13 +147,19 @@
                 <div class="col-xs-12 w-100">
                   <label>Subject</label>
                   <div class="selector position-relative">
-                    <select class="w-100 tour-type-select cursor-pointer">
-                      <option value="all" selected>All</option>
-                      <option value="sciences">Sciences</option>
-                      <option value="humanities">Humanities</option>
-                      <option value="languages">Languages</option>
+                    <select
+                      class="w-100 tour-type-select cursor-pointer"
+                      v-model="selected"
+                    >
+                      <option value="Tour Type" disabled selected
+                        >Tour Type</option
+                      >
+                      <option value="All">All</option>
+                      <option value="Sciences">Sciences</option>
+                      <option value="Humanities">Humanities</option>
+                      <option value="Languages">Languages</option>
                     </select>
-                    <span class="custom-select">Tour Type</span>
+                    <span class="custom-select">{{ selected }}</span>
                   </div>
                   <div class="form-group col-sm-6 col-md-2"></div>
                 </div>
@@ -317,8 +323,9 @@ export default {
     return {
       viewImage: false,
       diffIndex: null,
-      intervalTime: 15000,
+      intervalTime: 9000,
       auto: true,
+      selected: "Tour Type",
       silderInterval: "",
       bar: {
         value: 25
@@ -405,6 +412,14 @@ export default {
   },
   created() {
     this.autoSlide();
+  },
+  watch: {
+    selected() {
+      if (this.selected !== "Tour Type") {
+        this.$router.push({ name: "Tours" });
+        this.$store.dispatch("setResources", ["tour_type", this.selected]);
+      }
+    }
   }
 };
 </script>
