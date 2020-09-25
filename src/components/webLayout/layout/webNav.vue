@@ -5,13 +5,11 @@
       @mouseover="showAboutDropDown = false"
     >
       <p class="shuri-logo mb-0 py-2 mt-2">
-        <span
-          class="logo d-block m-auto cursor-pointer"
-          :style="{
-            backgroundImage: 'url(' + '/img/logos/shuri-tour.png' + ')'
-          }"
+        <img
+          class="logo d-block mx-auto h-100 cursor-pointer"
+          src="/img/logos/shuri-tour.png"
           @click="$router.push({ name: 'Home' })"
-        ></span>
+        >
       </p>
       <div class="platform-link d-flex my-auto mr-5">
         <p
@@ -201,18 +199,13 @@ export default {
 </style>
 <style lang="scss" scoped>
 .web-nav-layout {
-  background-color: rgb(0, 85, 255);
+  background-color: rgb(14, 121, 18);
   .logos-container {
     justify-content: space-around;
     text-align: center;
     .shuri-logo {
+      height: 13.5vh;
       flex: 1;
-      .logo {
-        width: 125px;
-        height: 70px;
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
     }
     .platform-link {
       .facebook-link-container {

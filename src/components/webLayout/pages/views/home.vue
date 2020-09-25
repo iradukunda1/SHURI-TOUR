@@ -9,7 +9,7 @@
       <!--      </div>-->
       <div class="slider-content d-inline-flex position-relative w-100 h-100">
         <div class="slide current">
-          <img class="first-slide-image w-100 h-100" src="/img/plane.jpg" />
+          <img class="first-slide-image w-100 h-100" src="/img/enas.jpg" />
           <div class="air-craft-content w-100 mt-5">
             <h1 class="plane-header mb-0" @click="fadingContent()">
               WHY WE ARE DIFFERENT:
@@ -45,7 +45,7 @@
         <div class="slide">
           <img
             class="second-slide-image w-100 h-100"
-            src="/img/Authentic-cross-curricular-options.jpg"
+            src="/img/internetCo.jpg"
           />
           <div class="content w-100">
             <h1 class="authentic-curricular-header">
@@ -65,11 +65,11 @@
         <div class="slide">
           <img
             class="third-slide-image w-100 h-100"
-            src="/img/older-china.jpg"
+            src="/img/plastic-rw.jpg"
           />
           <div class="content w-100">
             <h1 class="calibre-education-header">
-              High Calibre <br />
+              High Plastic <br />
               Educational Content
             </h1>
             <p
@@ -85,7 +85,7 @@
         <div class="slide">
           <img
             class="fourth-slide-image w-100 h-100"
-            src="/img/Innovative-Educational-Activities.jpg"
+            src="/img/positivo.jpg"
           />
           <div class="content w-100">
             <h1 class="innovation-header">
@@ -99,7 +99,7 @@
         <div class="slide">
           <img
             class="fifthy-slide-image w-100 h-100"
-            src="/img/Quality-features-benefits-for-Students.jpg"
+            src="/img/rema.jpg"
           />
           <div class="content w-100">
             <h1 class="students-benefits-header">
@@ -170,84 +170,84 @@
       </div>
     </div>
     <div class="home-page-content bg-grey pt-5 mb-5">
-      <div class="education-content-container container px-0">
-        <div class="education-context row col-sm-12 mx-0">
-          <div class="education-logo-container col-sm-3 mb-3">
-            <img src="/img/logos/shuri-book-logo.png" class="w-100" />
-          </div>
-          <div class="education-context-container col-sm-9">
-            <p>
-              SHURI is different from other Tour Operators. We focus on the
-              <strong>Educational and Pedagogical content</strong> of your
-              tour.<br />
-              SHURI has invested into long-term and exclusive partnerships with
-              selected Education Centres and schools in Rwanda, Kenya, Uganda
-              and DRC Congo.<br />
-              Our local partners have developed, under our supervision, programs
-              that are specific to the Easter Africa Curriculum and to Easter
-              African Schools requirements.<br />
-              These programs are classified as
-              <strong>Premium Educational Content</strong>.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="budget-exp-content-container container px-0 py-4">
-        <div class="budget-exp-context col-sm-12 mx-0 row">
-          <div class="budget-exp-context-container col-sm-9">
-            <p>
-              <strong>New in 2019</strong>. We recognise that sometimes choices
-              can be constrained by budgets. Our<strong>
-                Budget Educational Experience</strong
-              >
-              (BEE) includes some key sites and basic accommodation and
-              transfers. You can add one or more option packs to your BEE
-              program:<br />
-              <strong>Pedagogy Pack</strong> – add a lessons pack from one of
-              our Education Partners, which include the Outdoor Classroom
-              excursions (where available)<br />
-              <strong>Excursions Pack</strong> – including guided tours,
-              additional admissions and walking tours to enhance the educational
-              content of your program<br />
-              <strong>Dinners Pack</strong> – save time and drama with all your
-              dinners pre-booked for groups and catering to your food
-              requirements/allergies<br />
-              <strong>Accommodation Upgrade Pack</strong> – Upgrade from hostels
-              to 2-3* for that extra space and convenience<br />
-              <strong>Mobile Wifi Hot Spot</strong> – Hit the ground running and
-              avoid “bill shock” with a portable Wifi Hotspot, which includes
-              25€ credit (for up to 10 devices!)
-            </p>
-          </div>
-          <div class="budget-exp-logo-container col-sm-3 h-fit mb-3">
-            <img
-              src="/img/logos/BEE-LOGO-M_-BLUE_BACKGROUND_RGB.jpg"
-              class="w-100"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="thanks-content-container container px-0">
-        <div class="thanks-context col-sm-12 row mx-0">
-          <div class="thanks-logo-container col-sm-3 mb-3">
-            <img src="/img/logos/bank.jpg" class="w-100" />
-          </div>
-          <div class="thanks-context-container col-sm-9">
-            <p>
-              We appreciate you are busy teaching and that organising an
-              overseas tour is a time-consuming task. Our range of ready-made,
-              yet flexible itineraries will save you time. We provide assistance
-              throughout the entire preparation process, from the initial quote
-              through to the day of departure.<br />
-              We work with you to deliver educational tours that will inspire a
-              love of learning in the classroom and in everyday life.<br />
-              We also offer creative solutions should you be short of numbers
-              getting that tour off the ground!<br />
-              SHURI is East African owned
-            </p>
-          </div>
-        </div>
-      </div>
+<!--      <div class="education-content-container container px-0">-->
+<!--        <div class="education-context row col-sm-12 mx-0">-->
+<!--          <div class="education-logo-container col-sm-3 mb-3">-->
+<!--            <img src="/img/logos/shuri-book-logo.png" class="w-100" />-->
+<!--          </div>-->
+<!--          <div class="education-context-container col-sm-9">-->
+<!--            <p>-->
+<!--              SHURI is different from other Tour Operators. We focus on the-->
+<!--              <strong>Educational and Pedagogical content</strong> of your-->
+<!--              tour.<br />-->
+<!--              SHURI has invested into long-term and exclusive partnerships with-->
+<!--              selected Education Centres and schools in Rwanda, Kenya, Uganda-->
+<!--              and DRC Congo.<br />-->
+<!--              Our local partners have developed, under our supervision, programs-->
+<!--              that are specific to the Easter Africa Curriculum and to Easter-->
+<!--              African Schools requirements.<br />-->
+<!--              These programs are classified as-->
+<!--              <strong>Premium Educational Content</strong>.-->
+<!--            </p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="budget-exp-content-container container px-0 py-4">-->
+<!--        <div class="budget-exp-context col-sm-12 mx-0 row">-->
+<!--          <div class="budget-exp-context-container col-sm-9">-->
+<!--            <p>-->
+<!--              <strong>New in 2019</strong>. We recognise that sometimes choices-->
+<!--              can be constrained by budgets. Our<strong>-->
+<!--                Budget Educational Experience</strong-->
+<!--              >-->
+<!--              (BEE) includes some key sites and basic accommodation and-->
+<!--              transfers. You can add one or more option packs to your BEE-->
+<!--              program:<br />-->
+<!--              <strong>Pedagogy Pack</strong> – add a lessons pack from one of-->
+<!--              our Education Partners, which include the Outdoor Classroom-->
+<!--              excursions (where available)<br />-->
+<!--              <strong>Excursions Pack</strong> – including guided tours,-->
+<!--              additional admissions and walking tours to enhance the educational-->
+<!--              content of your program<br />-->
+<!--              <strong>Dinners Pack</strong> – save time and drama with all your-->
+<!--              dinners pre-booked for groups and catering to your food-->
+<!--              requirements/allergies<br />-->
+<!--              <strong>Accommodation Upgrade Pack</strong> – Upgrade from hostels-->
+<!--              to 2-3* for that extra space and convenience<br />-->
+<!--              <strong>Mobile Wifi Hot Spot</strong> – Hit the ground running and-->
+<!--              avoid “bill shock” with a portable Wifi Hotspot, which includes-->
+<!--              25€ credit (for up to 10 devices!)-->
+<!--            </p>-->
+<!--          </div>-->
+<!--          <div class="budget-exp-logo-container col-sm-3 h-fit mb-3">-->
+<!--            <img-->
+<!--              src="/img/logos/BEE-LOGO-M_-BLUE_BACKGROUND_RGB.jpg"-->
+<!--              class="w-100"-->
+<!--            />-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="thanks-content-container container px-0">-->
+<!--        <div class="thanks-context col-sm-12 row mx-0">-->
+<!--          <div class="thanks-logo-container col-sm-3 mb-3">-->
+<!--            <img src="/img/logos/bank.jpg" class="w-100" />-->
+<!--          </div>-->
+<!--          <div class="thanks-context-container col-sm-9">-->
+<!--            <p>-->
+<!--              We appreciate you are busy teaching and that organising an-->
+<!--              overseas tour is a time-consuming task. Our range of ready-made,-->
+<!--              yet flexible itineraries will save you time. We provide assistance-->
+<!--              throughout the entire preparation process, from the initial quote-->
+<!--              through to the day of departure.<br />-->
+<!--              We work with you to deliver educational tours that will inspire a-->
+<!--              love of learning in the classroom and in everyday life.<br />-->
+<!--              We also offer creative solutions should you be short of numbers-->
+<!--              getting that tour off the ground!<br />-->
+<!--              SHURI is East African owned-->
+<!--            </p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
       <div class="popular-tour-content-container container mt-5 px-0">
         <div class="popular-tour-context col-sm-12 row mx-0">
           <div class="popular-tour-header row mx-0 w-100">
