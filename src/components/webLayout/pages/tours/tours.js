@@ -5,11 +5,11 @@ export default {
       title: "FabLab Rwanda",
       location: "Kigali, Kacyiru",
       experience: "Trigonometric Function and Equations",
-      price: "500,000RFW",
+      price: "15000RFW",
       image: "/img/fablab.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+        "FabLab Rwanda is a space for members to turn innovative ideas into products specifically in the hardware and electronics domain. The space provides a platform for capacity building and integration of hardware skills with software knowledge and quickly bringing Rwandan innovators closer to the Internet of Things era.",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -24,10 +24,10 @@ export default {
       title: "Westwell Maker Space",
       location: "Kimihurura, Kigali",
       experience: "Trigonometric Function and Equations",
-      price: "10,500,000RFW",
+      price: "10,000RFW",
       image: "/img/westwell.jpg",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+        "The Westerwelle Startup Haus Kigali powered by Evonik Foundation is operated by the Westerwelle Foundation. The Westerwelle Startup Haus Kigali offers a unique mix of services; co-working space, networking events, private offices, maker-space, advisory services and international networking opportunities to local entrepreneurs. Our goal is to create an entrepreneurial hub for the community to exchange ideas and develop their business plan.",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -42,11 +42,11 @@ export default {
       title: "Lancet Laboratories",
       location: "Kigali, Remera",
       experience: "Chromosomes and Nuclear acid, DNA Replications",
-      price: "10,500,000RFW",
+      price: "5,000RFW",
       image: "/img/lancetlab.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+        "We are part of an internationally accredited pathology laboratory, providing high-quality pathology services to the medical and allied sectors, including occupational health, across Africa. This we do by operating ethically, efficiently and effectively, enabling us to provide these services at highly competitive rates.",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -61,11 +61,11 @@ export default {
       title: "Sulfo Rwanda",
       location: "Kigali, Nyarugenge District",
       experience: "Organic Chemistry",
-      price: "1000,000RFW",
+      price: "10,000RFW",
       premium: "/img/logos/BEE-LOGO-M_-BLUE_BACKGROUND_RGB.jpg",
       image: "/img/sulfo.jpg",
       description:
-        "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+        "Sulfo Rwanda Industries is the second largest manufacturing company in Rwanda. It was established in 1962 by Mr.Tajdin H. Jaffer and was then the one and only soap industry in Rwanda. It was founded as a partnership firm and later was incorporated as a Public limited concern.",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 10,
       type: {
@@ -80,11 +80,11 @@ export default {
       title: "Roto Tanks",
       location: "Kicukiro, Kigali / Rwanda",
       experience: "Organic Chemistry",
-      price: "1000,000RFW",
+      price: "5,000RFW",
       image: "/img/rotorw.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+        "Roto is one of the leading manufacturer and supplier of best quality plastic water tanks ,Plastic Mobile Toilets,Septic Tanks,Dust bins,PVC Pipes and other plastic products in East Africa and a No 1 in Rwanda in its segment.",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -99,11 +99,11 @@ export default {
       title: "Sonatube",
       location: "Kigali, Kicukiro District",
       experience: "Organic Chemistry",
-      price: "1000,000RFW",
+      price: "9,000RFW",
       image: "/img/sonatube.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+        "SONATUBES Ltd was established from December 10th, 1976 and was primarily organized by the Belgian company  UTEMA S.A, the Travhydro Nederland, the government of Rwanda and the Rwanda Development Bank. The goal of SONATUBES Ltd is still to make and manufacture different kinds of  PVC Tubes, Plastic Pipes including importation and exportation of all metal tubes and other accessories for construction and hardware products.",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -118,7 +118,7 @@ export default {
       title: "Mironko Plastic",
       location: "Kigali,Gikondo",
       experience: "Organic Chemistry, Alkanes",
-      price: "100,000RFW",
+      price: "10,000RFW",
       image: "/img/mironko.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -137,7 +137,7 @@ export default {
       title: "Baho International Centre",
       location: "Kigali, Nyarutarama",
       experience: "Alkanes",
-      price: "1000,000RFW",
+      price: "5,000RFW",
       premium: "/img/logos/BEE-LOGO-M_-BLUE_BACKGROUND_RGB.jpg",
       image: "/img/baho.jpg",
       description:
@@ -157,7 +157,7 @@ export default {
       location: "Kigali, Nyarugenge",
       experience:
         "Map working Interpretation and Bearings, directions, distances areas on map",
-      price: "1000,000RFW",
+      price: "10,000RFW",
       premium: "/img/logos/BEE-LOGO-M_-BLUE_BACKGROUND_RGB.jpg",
       image: "/img/meteo.jpg",
       description:
@@ -176,7 +176,7 @@ export default {
       title: "Internet Company",
       location: "BroadBand system corporation",
       experience: "Introduction to computer sciences",
-      price: "500,000RFW",
+      price: "5,000RFW",
       image: "/img/internetCo.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -195,7 +195,7 @@ export default {
       title: "Minicofin",
       location: "Kigali Nyarugenge",
       experience: "Measuring national Income",
-      price: "500,000RFW",
+      price: "5,000RFW",
       image: "/img/minecofin.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -214,7 +214,7 @@ export default {
       title: "Sahasra",
       location: "Kigali Masoro",
       experience: "Light, Oscillation and wave",
-      price: "500,000RFW",
+      price: "5,000RFW",
       image: "/img/sahasra.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -233,7 +233,7 @@ export default {
       title: "Meteo Rwanda",
       location: "Kigali Masoro",
       experience: "Energy change in simple harmonic",
-      price: "500,000RFW",
+      price: "5,000RFW",
       image: "/img/meteo.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -252,7 +252,7 @@ export default {
       title: "Bella Flowers",
       location: "Rwamagana",
       experience: "Autotrophic Nutrition and Transport in Plants",
-      price: "1000,000RFW",
+      price: "10,000RFW",
       image: "/img/bella.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -271,11 +271,11 @@ export default {
       title: "FabLab Rwanda",
       location: "Kacyiru, Kigali",
       experience: "Matrices Determination Order Change",
-      price: "1000,000RFW",
+      price: "15,000RFW",
       image: "/img/fablab.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+        "FabLab Rwanda is a space for members to turn innovative ideas into products specifically in the hardware and electronics domain. The space provides a platform for capacity building and integration of hardware skills with software knowledge and quickly bringing Rwandan innovators closer to the Internet of Things era.",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -290,11 +290,11 @@ export default {
       title: "Westwell Maker Space",
       location: "Kimihurura, Kigali",
       experience: "Matrices Determination Order Change",
-      price: "1000,000RFW",
+      price: "10,000RFW",
       image: "/img/westwell.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+        "The Westerwelle Startup Haus Kigali powered by Evonik Foundation is operated by the Westerwelle Foundation. The Westerwelle Startup Haus Kigali offers a unique mix of services; co-working space, networking events, private offices, maker-space, advisory services and international networking opportunities to local entrepreneurs. Our goal is to create an entrepreneurial hub for the community to exchange ideas and develop their business plan.",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -309,11 +309,11 @@ export default {
       title: "FabLab Rwanda",
       location: "Kacyiru, Kigali",
       experience: "Points,Straight Lines and Sphere 3D",
-      price: "1000,000RFW",
+      price: "15,000RFW",
       image: "/img/fablab.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+        "FabLab Rwanda is a space for members to turn innovative ideas into products specifically in the hardware and electronics domain. The space provides a platform for capacity building and integration of hardware skills with software knowledge and quickly bringing Rwandan innovators closer to the Internet of Things era.",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -328,11 +328,11 @@ export default {
       title: "Westwell Maker Space",
       location: "Kimihurura, Kigali",
       experience: "Points,Straight Lines and Sphere 3D",
-      price: "1000,000RFW",
+      price: "10,000RFW",
       image: "/img/westwell.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+        "The Westerwelle Startup Haus Kigali powered by Evonik Foundation is operated by the Westerwelle Foundation. The Westerwelle Startup Haus Kigali offers a unique mix of services; co-working space, networking events, private offices, maker-space, advisory services and international networking opportunities to local entrepreneurs. Our goal is to create an entrepreneurial hub for the community to exchange ideas and develop their business plan.",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -347,11 +347,11 @@ export default {
       title: "Sulfo Rwanda",
       location: "Kigali, Nyarutarama",
       experience: "Chemical Reaction of Halogen alkanes",
-      price: "1000,000RFW",
+      price: "10,000RFW",
       image: "/img/sulfo.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+        "Sulfo Rwanda Industries is the second largest manufacturing company in Rwanda. It was established in 1962 by Mr.Tajdin H. Jaffer and was then the one and only soap industry in Rwanda. It was founded as a partnership firm and later was incorporated as a Public limited concern.",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -366,7 +366,7 @@ export default {
       title: "Inyange Industry",
       location: "Kigali, Masaka",
       experience: "Chemical Reaction of Halogen alkanes",
-      price: "1000,000RFW",
+      price: "5,000RFW",
       image: "/img/inyange.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -385,7 +385,7 @@ export default {
       title: "Bralirwa Industry",
       location: "kigali, Kicukiro",
       experience: "Alcohols and ethers",
-      price: "1000,000RFW",
+      price: "10,000RFW",
       image: "/img/bralirwa.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -404,7 +404,7 @@ export default {
       title: "Speranza LTD Rwanda",
       location: "kigali, Masaka",
       experience: "carboxylic acids and acylhalides",
-      price: "1000,000RFW",
+      price: "10,000RFW",
       image: "/img/speranza.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -423,7 +423,7 @@ export default {
       title: "Rwanda Metrology",
       location: "Kigali, Nyarugenge",
       experience: "weather and Climate Change of world",
-      price: "1000,000RFW",
+      price: "10,000RFW",
       premium: "/img/logos/BEE-LOGO-M_-BLUE_BACKGROUND_RGB.jpg",
       image: "/img/meteo.jpg",
       description:
@@ -443,7 +443,7 @@ export default {
       location: "Database design",
       experience:
         "Computer software installation, introduction to computer programming",
-      price: "1000,000RFW",
+      price: "10,000RFW",
       image: "/img/software.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -462,7 +462,7 @@ export default {
       title: "National Bank of Rwanda (BNR)",
       location: "Kigali Nyarugenge",
       experience: "Money,Financial Institution, inflation",
-      price: "1000,000RFW",
+      price: "5,000RFW",
       image: "/img/Authentic-cross-curricular-options.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -481,7 +481,7 @@ export default {
       title: "SAHASRA",
       location: "Kigali Masoro",
       experience: "Oscillation and wave",
-      price: "1000,000RFW",
+      price: "10,000RFW",
       image: "/img/sahasra.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -500,7 +500,7 @@ export default {
       title: "Meteo Rwanda",
       location: "Kigali Nyarugenge",
       experience: "Propagation of mechanical waves",
-      price: "1000,000RFW",
+      price: "5,000RFW",
       image: "/img/meteo.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -519,7 +519,7 @@ export default {
       title: "Rwanda Energy Group (REG)",
       location: "Kigali Nyarugenge",
       experience: "current electricity",
-      price: "1000,000RFW",
+      price: "10,000RFW",
       image: "/img/reg.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -538,7 +538,7 @@ export default {
       title: "KGAUGA daily Farm",
       location: "Kigali Gasabo",
       experience: "energy power and climate change",
-      price: "1000,000RFW",
+      price: "5,000RFW",
       image: "/img/kagugu.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -558,7 +558,7 @@ export default {
       location: "Database design",
       experience:
         "Computer software installation, introduction to computer programming",
-      price: "1000,000RFW",
+      price: "10,000RFW",
       image: "/img/software.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -577,7 +577,7 @@ export default {
       title: "Baho International Centre",
       location: "Kigali Remera",
       experience: "Regulation of Glucose and temperature, Genetics",
-      price: "500,000RFW",
+      price: "5,000RFW",
       image: "/img/baho.jpg",
       description:
         "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
@@ -595,7 +595,7 @@ export default {
       title: "Inyange Industry",
       location: "Kigali, Masaka",
       experience: "Solution and Titration",
-      price: "500,000RFW",
+      price: "5,000RFW",
       image: "/img/inyange.jpg",
       description:
         "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
@@ -613,7 +613,7 @@ export default {
       title: "Enterprise Urwibutso",
       location: "Rulindo Northern province",
       experience: "Conductivity of Solutions",
-      price: "500,000RFW",
+      price: "5,000RFW",
       image: "/img/urwibutso.jpg",
       description:
         "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
@@ -631,10 +631,10 @@ export default {
       title: "Sulfo Rwanda",
       location: "Kigali Nyarugenge",
       experience: "Electrolysis",
-      price: "500,000RFW",
+      price: "10,000RFW",
       image: "/img/sulfo.jpg",
       description:
-        "10 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+        "Sulfo Rwanda Industries is the second largest manufacturing company in Rwanda. It was established in 1962 by Mr.Tajdin H. Jaffer and was then the one and only soap industry in Rwanda. It was founded as a partnership firm and later was incorporated as a Public limited concern.",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 12,
       type: {
@@ -650,7 +650,7 @@ export default {
       location: "Kigali, Remera",
       experience:
         "Regulation of Glucose and temperature, Immune system vaccination and antibiotics",
-      price: "1000,000RFW",
+      price: "5,000RFW",
       premium: "/img/logos/BEE-LOGO-M_-BLUE_BACKGROUND_RGB.jpg",
       image: "/img/baho.jpg",
       description:
@@ -669,7 +669,7 @@ export default {
       title: "Software Company",
       location: "Nyamirambo, Kakigali",
       experience: "Object orientated programming of java",
-      price: "1000,000RFW",
+      price: "10,000RFW",
       image: "/img/software.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -688,7 +688,7 @@ export default {
       title: "Mifotra",
       location: "Kagali, Kacyiru",
       experience: "Labour and wages unemployment",
-      price: "1000,000RFW",
+      price: "5,000RFW",
       image: "/img/mifotra.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -707,7 +707,7 @@ export default {
       title: "Meteo Rwanda",
       location: "Kagali, Nyarugenge",
       experience: "Astrophysics: Earth and Space",
-      price: "1000,000RFW",
+      price: "5,000RFW",
       image: "/img/meteo.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -726,7 +726,7 @@ export default {
       title: "Baho International Hospital",
       location: "Kagali, Nyarutaram",
       experience: "The circulatory system",
-      price: "1000,000RFW",
+      price: "10,000RFW",
       image: "/img/baho.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -745,11 +745,11 @@ export default {
       title: "Sonatube",
       location: "Kigali, Kicukiro District",
       experience: "Properties and uses of transition metals",
-      price: "1000,000RFW",
+      price: "9,000RFW",
       image: "/img/sonatube.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+        "SONATUBES Ltd was established from December 10th, 1976 and was primarily organized by the Belgian company  UTEMA S.A, the Travhydro Nederland, the government of Rwanda and the Rwanda Development Bank. The goal of SONATUBES Ltd is still to make and manufacture different kinds of  PVC Tubes, Plastic Pipes including importation and exportation of all metal tubes and other accessories for construction and hardware products.",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -764,7 +764,7 @@ export default {
       title: "Master Steel",
       location: "Kigali,Gahanga",
       experience: "Properties and uses of transition metals",
-      price: "1000,000RFW",
+      price: "5,000RFW",
       image: "/img/master-stell.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -783,7 +783,7 @@ export default {
       title: "Enas",
       location: "Kigali,Nyadungu",
       experience: "Extraction of Metals",
-      price: "1000,000RFW",
+      price: "10,000RFW",
       image: "/img/enas.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -802,7 +802,7 @@ export default {
       title: "Rwanda Plastic Industry",
       location: "Kigali,Kicukiro",
       experience: "NPK as components of fertilizers benzene",
-      price: "1000,000RFW",
+      price: "2000RFW",
       image: "/img/plastic-rw.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -821,11 +821,11 @@ export default {
       title: "FabLab Rwanda",
       location: "Kigali, Kacyiru",
       experience: "External Land form Processes and related features",
-      price: "500,000RFW",
+      price: "15,000RFW",
       image: "/img/fablab.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+        "FabLab Rwanda is a space for members to turn innovative ideas into products specifically in the hardware and electronics domain. The space provides a platform for capacity building and integration of hardware skills with software knowledge and quickly bringing Rwandan innovators closer to the Internet of Things era.",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -840,10 +840,10 @@ export default {
       title: "Westwell Maker Space",
       location: "Kigali,Kimihurura",
       experience: "External Land form Processes and related features",
-      price: "10,500,000RFW",
+      price: "10,000RFW",
       image: "/img/westwell.jpg",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+        "The Westerwelle Startup Haus Kigali powered by Evonik Foundation is operated by the Westerwelle Foundation. The Westerwelle Startup Haus Kigali offers a unique mix of services; co-working space, networking events, private offices, maker-space, advisory services and international networking opportunities to local entrepreneurs. Our goal is to create an entrepreneurial hub for the community to exchange ideas and develop their business plan.",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -858,7 +858,7 @@ export default {
       title: "FabLab Rwanda",
       location: "Kigali, Kacyiru",
       experience: "Complex Numbers and equations",
-      price: "500,000RFW",
+      price: "15,000RFW",
       image: "/img/fablab.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -877,10 +877,10 @@ export default {
       title: "Westwell Maker Space",
       location: "Kigali,Kimihurura",
       experience: "Complex Numbers and equations",
-      price: "10,500,000RFW",
+      price: "10,000RFW",
       image: "/img/westwell.jpg",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+        "The Westerwelle Startup Haus Kigali powered by Evonik Foundation is operated by the Westerwelle Foundation. The Westerwelle Startup Haus Kigali offers a unique mix of services; co-working space, networking events, private offices, maker-space, advisory services and international networking opportunities to local entrepreneurs. Our goal is to create an entrepreneurial hub for the community to exchange ideas and develop their business plan.",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -892,11 +892,11 @@ export default {
     },
     {
       id: "jdsnkjds-kjmngfkj-kjnjhgkfg-jbhjdsfd",
-      title: "Broadband system corpration",
+      title: "Broadband system corporation",
       location: "Kigali,Remera",
       experience:
         "Computer security LAN architecture, network protocols and models",
-      price: "10,500,000RFW",
+      price: "10,000RFW",
       image: "/img/internetCo.jpg",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
@@ -915,7 +915,7 @@ export default {
       location: "Kigali,Gishushu",
       experience:
         "Computer security LAN architecture, network protocols and models",
-      price: "10,500,000RFW",
+      price: "20,000RFW",
       image: "/img/axiom.png",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
@@ -933,7 +933,7 @@ export default {
       title: "Ministry of Trade and Industry",
       location: "Kigali,Kimihurura",
       experience: "International trade, free trade and trade protectionism",
-      price: "10,500,000RFW",
+      price: "5000RFW",
       image: "/img/trade.jpg",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
@@ -951,7 +951,7 @@ export default {
       title: "Sahasra",
       location: "Kigali Masoro",
       experience: "Oscillation and wave",
-      price: "500,000RFW",
+      price: "5,000RFW",
       image: "/img/sahasra.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -970,7 +970,7 @@ export default {
       title: "Meteo Rwanda",
       location: "Kigali Nyarugenge",
       experience: "Energy changes in simple harmonic",
-      price: "500,000RFW",
+      price: "5,000RFW",
       image: "/img/meteo.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -989,7 +989,7 @@ export default {
       title: "Inyange Industry",
       location: "Kigali Masoro",
       experience: "Agricultural physics",
-      price: "500,000RFW",
+      price: "5,000RFW",
       image: "/img/inyange.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -1008,7 +1008,7 @@ export default {
       title: "Baho International Hospital",
       location: "Kagali, Nyarutaram",
       experience: "Cellural respiration",
-      price: "1000,000RFW",
+      price: "10,000RFW",
       image: "/img/baho.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -1027,11 +1027,11 @@ export default {
       title: "Sulfo Rwanda",
       location: "Kigali, Nyarutarama",
       experience: "PH of acidic and alkaline solutions",
-      price: "1000,000RFW",
+      price: "10,000RFW",
       image: "/img/sulfo.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+        "Sulfo Rwanda Industries is the second largest manufacturing company in Rwanda. It was established in 1962 by Mr.Tajdin H. Jaffer and was then the one and only soap industry in Rwanda. It was founded as a partnership firm and later was incorporated as a Public limited concern.",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -1046,7 +1046,7 @@ export default {
       title: "Inyange Industry",
       location: "Kigali, Masaka",
       experience: "PH of acidic and alkaline solutions",
-      price: "1000,000RFW",
+      price: "5,000RFW",
       image: "/img/inyange.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -1065,7 +1065,7 @@ export default {
       title: "Bralirwa Industry",
       location: "kigali, Kicukiro",
       experience: "Quantintive chemical equilibrium",
-      price: "1000,000RFW",
+      price: "10,000RFW",
       image: "/img/bralirwa.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -1084,7 +1084,7 @@ export default {
       title: "Speranza LTD",
       location: "kigali, Masaka",
       experience: "Quantintive chemical equilibrium",
-      price: "1000,000RFW",
+      price: "10,000RFW",
       image: "/img/speranza.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -1103,7 +1103,7 @@ export default {
       title: "Rwanda Environment Management Authority (REMA)",
       location: "Kigali, Kacyiru",
       experience: "Global Drainage system, Climate change in the World",
-      price: "500,000RFW",
+      price: "5,000RFW",
       image: "/img/rema.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -1126,7 +1126,7 @@ export default {
       image: "/img/fablab.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+        "FabLab Rwanda is a space for members to turn innovative ideas into products specifically in the hardware and electronics domain. The space provides a platform for capacity building and integration of hardware skills with software knowledge and quickly bringing Rwandan innovators closer to the Internet of Things era.",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -1141,10 +1141,10 @@ export default {
       title: "Westwell Maker Space",
       location: "Kigali,Kimihurura",
       experience: "Matrix and determination of order",
-      price: "10,500,000RFW",
+      price: "10,000RFW",
       image: "/img/westwell.jpg",
       description:
-        "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
+        "The Westerwelle Startup Haus Kigali powered by Evonik Foundation is operated by the Westerwelle Foundation. The Westerwelle Startup Haus Kigali offers a unique mix of services; co-working space, networking events, private offices, maker-space, advisory services and international networking opportunities to local entrepreneurs. Our goal is to create an entrepreneurial hub for the community to exchange ideas and develop their business plan.",
       time_interval: "28/03/2018 - 28/03/2048",
       days: 1,
       type: {
@@ -1160,7 +1160,7 @@ export default {
       location: "Kigali,Nyarugenge",
       experience:
         "Economic Intergration on the development of economy, globalisation, Economic Growth Economic Development Under Order",
-      price: "10,500,000RFW",
+      price: "10,000RFW",
       image: "/img/minecofin.jpg",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
@@ -1178,7 +1178,7 @@ export default {
       title: "Rwanda Utilities Regulatory Agency",
       location: "Kigali,Nyarugenge",
       experience: "Digital analogy and Digital signals",
-      price: "10,500,000RFW",
+      price: "5,000RFW",
       image: "/img/rura.jpg",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
@@ -1196,7 +1196,7 @@ export default {
       title: "Meteo Rwanda",
       location: "Kigali,Nyarugenge",
       experience: "Digital analogy and Digital signals",
-      price: "10,500,000RFW",
+      price: "5,000RFW",
       image: "/img/meteo.jpg",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
@@ -1214,7 +1214,7 @@ export default {
       title: "Rwanda Energy Group",
       location: "Kigali,Nyarugenge",
       experience: "Digital analogy and Digital signals",
-      price: "10,500,000RFW",
+      price: "10,000RFW",
       image: "/img/reg.jpg",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
@@ -1232,7 +1232,7 @@ export default {
       title: "Meteo Rwanda",
       location: "Kagali, Nyarugenge",
       experience: "Human Reproduction, Principal of Gene Technology",
-      price: "1000,000RFW",
+      price: "5,000RFW",
       image: "/img/meteo.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -1251,7 +1251,7 @@ export default {
       title: "Mara Phone",
       location: "Kagali, Masoro",
       experience: "ElectroChemical Cell and Applications",
-      price: "1000,000RFW",
+      price: "10,000RFW",
       image: "/img/mara.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -1270,7 +1270,7 @@ export default {
       title: "Positivo",
       location: "Kagali, Masoro",
       experience: "ElectroChemical Cell and Applications",
-      price: "1000,000RFW",
+      price: "10,000RFW",
       image: "/img/positivo.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -1290,7 +1290,7 @@ export default {
       location: "Kagali, Gishushu",
       experience:
         "Industrialization in the world, Trade and Commerce in the world, Environment consarvation and trourism",
-      price: "1000,000RFW",
+      price: "5,000RFW",
       image: "/img/rdb.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
@@ -1310,7 +1310,7 @@ export default {
       location: "Kigali,Kimihurura",
       experience:
         "Economic Intergration on the development of economy, Globalisation",
-      price: "10,500,000RFW",
+      price: "5,000RFW",
       image: "/img/trade.jpg",
       description:
         "1 day FULLY INCLUSIVE program including 8 hours of tailored lessons suitable for place History, Geography, and Visual Arts",
@@ -1328,7 +1328,7 @@ export default {
       title: "Meteo Rwanda",
       location: "Kagali, Nyarugenge",
       experience: "Astrophysics: Earth and Space",
-      price: "1000,000RFW",
+      price: "5,000RFW",
       image: "/img/meteo.jpg",
       premium: "/img/logos/shuri-book-logo.png",
       description:
