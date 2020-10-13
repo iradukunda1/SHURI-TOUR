@@ -168,7 +168,7 @@
                       </tr>
                       <tr>
                         <td><p class="detail-label">Available Seats:</p></td>
-                        <td class="available-seats fa-12 text-black-50">22</td>
+                        <td class="available-seats fa-12 text-black-50">60</td>
                       </tr>
                       <tr>
                         <td><p class="detail-label">Price From:</p></td>
@@ -203,13 +203,13 @@ export default {
     return {
       activeImage: 0,
       images: [
-        "/img/china-fruits.jpg",
-        "/img/blue-sea.jpg",
-        "/img/ancient-egypt.jpg",
-        "/img/old-palace.jpg",
-        "/img/roman-statu.jpg",
-        "/img/old-prison-egypt.jpg",
-        "/img/birreria.jpg"
+        // "/img/china-fruits.jpg",
+        // "/img/blue-sea.jpg",
+        // "/img/ancient-egypt.jpg",
+        // "/img/old-palace.jpg",
+        // "/img/roman-statu.jpg",
+        // "/img/old-prison-egypt.jpg",
+        // "/img/birreria.jpg"
       ],
       intervalTime: 3000,
       auto: true,
@@ -273,6 +273,7 @@ export default {
     }
   },
   mounted() {
+    this.images.push(this.tour.image);
     this.autoSlide();
   }
 };

@@ -246,19 +246,11 @@ export default {
               name: "PCB",
               classrooms: [
                 {
-                  classCode: "s04",
-                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
-                },
-                {
                   classCode: "s05",
                   terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
                 },
                 {
                   classCode: "s06",
-                  terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
-                },
-                {
-                  classCode: "s03",
                   terms: ["1ST TERM", "2ND TERM", "3RD TERM"]
                 }
               ]

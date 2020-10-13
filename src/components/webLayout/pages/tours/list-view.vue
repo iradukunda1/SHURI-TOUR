@@ -4,6 +4,7 @@
       class="tour-packages w-100"
       v-for="(tour, index) in tours"
       :key="index"
+      @mouseover="showCheckBox(index)"
     >
       <div class="tour-card-container mb-4 pb-2 row mx-0 w-100">
         <div class="tour-image col-sm-5 col-md-4 d-flex px-0">
@@ -28,19 +29,25 @@
         <div class="tour-details col-sm-7 col-md-8 py-1 pr-0">
           <div class="d-flex w-100 border-white mx-0">
             <div class="d-table-cell pb-2 pt-3 pr-3">
-              <h4 class="tour-title cursor-pointer fa-16">
-                {{ tour.title }}
-              </h4>
-              <img
-                class="logo_premium"
-                :class="{ 'd-none': !tour.premium }"
-                :src="tour.premium ? tour.premium : ''"
-              />
+              <div class="d-inline-flex">
+<!--                <input-->
+<!--                  type="checkbox"-->
+<!--                  class="mt-1 mr-2"-->
+<!--                  v-if="showSelectInput && diffInput == index"-->
+<!--                />-->
+                <h4 class="tour-title cursor-pointer fa-16">
+                  {{ tour.title }}
+                </h4>
+                <!--                <img-->
+                <!--                  class="logo_premium ml-auto"-->
+                <!--                  :class="{ 'd-none': !tour.premium }"-->
+                <!--                  :src="tour.premium ? tour.premium : ''"-->
+                <!--                />-->
+              </div>
             </div>
             <div class="border-left-white pt-3 pb-2 ml-auto">
               <span class="price px-3"
-                ><small class="mb-1">20 students + 2 teachers from</small
-                >{{ tour.price }}</span
+                ><small class="mb-1">price</small>{{ tour.price }}</span
               >
             </div>
           </div>
@@ -70,8 +77,16 @@ export default {
   data() {
     return {
       diffIndex: null,
-      viewImage: false
+      viewImage: false,
+      showSelectInput: false,
+      diffInput: null
     };
+  },
+  methods: {
+    showCheckBox(index) {
+      this.showSelectInput = !this.showSelectInput;
+      this.diffInput = index;
+    }
   }
 };
 </script>
@@ -81,15 +96,18 @@ export default {
   .tour-packages {
     .tour-card-container {
       background: #efefef !important;
+
       .tour-image {
         img {
           height: 160px;
           width: 100%;
+
           &:hover {
             //animation: zoomOut .3s ease;
             overflow-x: hidden;
           }
         }
+
         .zoomer-bg {
           height: 160px;
           width: 100%;
@@ -104,22 +122,27 @@ export default {
   .border-white {
     border-bottom: 1px solid rgb(254, 255, 255) !important;
   }
+
   .border-left-white {
     border-left: 1px solid rgb(254, 255, 255) !important;
   }
+
   .tour-title {
     margin: 0;
     float: left;
     max-width: 60%;
+
     &:hover {
       color: #194eb0;
     }
   }
+
   .logo_premium {
     float: right;
     width: 20%;
     vertical-align: middle;
   }
+
   .price {
     color: #7db921;
     font-size: 0.8em;
@@ -130,18 +153,21 @@ export default {
     line-height: 1;
     display: block;
   }
+
   .price small {
     display: block;
     color: #838383;
     font-size: 0.8em;
     margin-bottom: 5px;
   }
+
   .view-button {
     font-weight: 700;
     opacity: 0.6;
     color: white;
     font-size: 0.7em;
     background: rgb(217, 217, 217);
+
     &:hover {
       background: rgb(152, 206, 68);
       opacity: 1;
