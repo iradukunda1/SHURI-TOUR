@@ -339,7 +339,7 @@ export default {
       right: 0;
       transform: translateX(100%);
       transition: transform 0.5s ease-in;
-      z-index: 200;
+      z-index: 99999;
       .nav-links {
         flex-direction: column;
         align-items: start !important;
@@ -348,6 +348,7 @@ export default {
         li {
           margin-bottom: 1.5rem;
           font-size: 74% !important;
+          padding-bottom: 1em;
         }
       }
     }
